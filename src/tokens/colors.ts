@@ -33,6 +33,9 @@ export const colors = {
   aiForeground: "var(--sds-color-ai-foreground)",
   aiSurface: "var(--sds-color-ai-surface)",
   aiBorder: "var(--sds-color-ai-border)",
+  overlayTooltip: "var(--sds-color-overlay-tooltip)",
+  overlayTooltipSecondary: "var(--sds-color-overlay-tooltip-secondary)",
+  overlayTooltipText: "var(--sds-color-overlay-tooltip-text)",
 } as const;
 
 /** Resolved Light-mode hex values from Figma (node 29:1783 + Semantic collection). */
@@ -57,6 +60,8 @@ export const colorValuesLight = {
   statusError: "#b33434",
   statusSuccess: "#237348",
   statusWarning: "#875b13",
+  overlayTooltip: "#1a2438",
+  overlayTooltipSecondary: "#e0e8f5",
 } as const;
 
 export type ColorToken = keyof typeof colors;

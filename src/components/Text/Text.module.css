@@ -38,6 +38,12 @@
   line-height: 1.5;
 }
 
+.sectionTitle {
+  font-size: var(--sds-text-section-title);
+  font-weight: var(--sds-font-weight-semibold);
+  line-height: 1.5rem;
+}
+
 .body {
   font-size: var(--sds-text-body);
   font-weight: var(--sds-font-weight-regular);

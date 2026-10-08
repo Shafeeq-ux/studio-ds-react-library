@@ -2,7 +2,7 @@
 
 React + TypeScript design system component library with Storybook documentation, aligned to the [Studio DS Figma file](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS?node-id=29-1783).
 
-Tokens come from Figma collections **Studio · Semantic** (Light/Dark), **Studio · Typography** (Inter), and **Studio · Primitives** (spacing, radius, motion).
+Tokens come from Figma collections **Studio · Semantic** (Light/Dark), **Studio · Typography** (Inter), **Studio · Primitives** (spacing, radius, icon, border, motion), and effect styles **Studio/Elevation/***.
 
 ## Install
 
@@ -41,28 +41,20 @@ npm run lint
 
 `npm run dev` is an alias for Storybook on port **44041**.
 
-## What’s in v0
+## What’s included
 
 | Area | Contents |
 | ---- | -------- |
-| Tokens | Semantic color (light/dark), Inter type scale, spacing 4–64, radii, motion |
+| Tokens | Semantic color (light/dark), overlay/tooltip, Inter type scale, spacing, radii, icon sizes, border widths, motion, elevation shadows |
 | Foundations | `Text`, `Stack` |
-| Core | `Button`, `IconButton`, `Alert`, `Badge`, `Avatar`, `Input`, `Textarea`, `Select`, `Switch`, `Toggle`, `PageHeading` |
-| Docs | Storybook Overview, Foundations, and per-component stories; Light/Dark toolbar |
+| Actions & feedback | `Button`, `IconButton`, `Alert`, `Badge`, `Avatar`, `Progress`, `Tooltip` |
+| Forms | `Input`, `Textarea`, `Select`, `SelectOptionItem`, `Search`, `NumberInput`, `Radio`, `Switch`, `Toggle` |
+| Navigation | `Tabs`/`Tab`, `Breadcrumbs`, `NavigationItem`, `StepperItem`, `PageHeading`, `PanelHeader`, `Dropdown`, `MenuItem` |
+| Data | `MetricCard` |
+| Utilities | `Link`, `Divider` (token-derived; no Figma component set) |
+| Docs | Storybook Overview, Foundations (variables / type / effects), per-component stories; Light/Dark toolbar |
 
-## Figma mapping
-
-| Figma | Code |
-| ----- | ---- |
-| `text/primary`, `surface/default`, `action/primary`, … | `--sds-color-*` / `colors.*` |
-| `font-family/sans` = Inter | `--sds-font-sans` |
-| `font-size/*` | `--sds-text-*` / `Text` variants |
-| `spacing/*` | `--sds-space-*` / `Stack` `gap` |
-| `Studio/Button` Appearance Primary/Secondary | `Button` `variant` |
-| `Studio/Icon button` Surface/Quiet | `IconButton` |
-| `Studio/Switch` / `Studio/Toggle` | `Switch` / `Toggle` |
-| `Studio/Select` / `Studio/Textarea` | `Select` / `Textarea` |
-| `Studio/Page heading` | `PageHeading` |
+Domain AI / role-play / table composites and the Icon glyph library remain deferred — see the project plan inventory.
 
 ## License
 

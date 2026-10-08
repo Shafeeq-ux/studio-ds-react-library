@@ -1,0 +1,95 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sds-space-8);
+  box-sizing: border-box;
+  margin: 0;
+  padding: var(--sds-space-16);
+  min-height: 4rem;
+  border: 1px solid var(--sds-color-border-default);
+  border-radius: var(--sds-radius-8);
+  background: var(--sds-color-surface-default);
+  color: var(--sds-color-text-primary);
+  font-family: var(--sds-font-sans);
+  font-size: var(--sds-text-body);
+  font-weight: var(--sds-font-weight-regular);
+  line-height: var(--sds-leading-body);
+  cursor: pointer;
+  transition: border-color var(--sds-motion-120) var(--sds-ease-out),
+    background-color var(--sds-motion-120) var(--sds-ease-out),
+    box-shadow var(--sds-motion-120) var(--sds-ease-out);
+}
+
+.wide { width: 100%; max-width: 18.5rem; }
+.compact { width: 100%; max-width: 9.8125rem; }
+
+.root:hover:not([data-disabled="true"]) {
+  background: var(--sds-color-surface-hover);
+}
+
+.root:has(.input:checked),
+.root[data-selected="true"] {
+  border-color: var(--sds-color-action-primary);
+  box-shadow: 0 0 0 1px var(--sds-color-action-primary);
+}
+
+.root[data-disabled="true"] {
+  background: var(--sds-color-surface-disabled);
+  color: var(--sds-color-text-tertiary);
+  cursor: not-allowed;
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+}
+
+.control {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  width: 1.125rem;
+  height: 1.125rem;
+  border: 1.5px solid var(--sds-color-border-control);
+  border-radius: 999px;
+  background: var(--sds-color-surface-default);
+  display: grid;
+  place-items: center;
+}
+
+.root:has(.input:checked) .control,
+.root[data-selected="true"] .control {
+  border-color: var(--sds-color-action-primary);
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--sds-color-action-primary);
+  transform: scale(0);
+  transition: transform var(--sds-motion-120) var(--sds-ease-out);
+}
+
+.root:has(.input:checked) .dot,
+.root[data-selected="true"] .dot { transform: scale(1); }
+
+.root[data-disabled="true"] .control {
+  border-color: var(--sds-color-border-default);
+  background: var(--sds-color-surface-secondary);
+}
+
+.root[data-disabled="true"][data-selected="true"] .dot {
+  background: var(--sds-color-text-tertiary);
+}
+
+.label {
+  min-width: 0;
+}
+
+.input:focus-visible + .control {
+  outline: 2px solid var(--sds-color-focus-ring);
+  outline-offset: 2px;
+}

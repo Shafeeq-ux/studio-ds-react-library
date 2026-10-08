@@ -1,0 +1,25 @@
+.root {
+  display: block;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--sds-color-surface-secondary);
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--sds-color-action-primary);
+  transition: width var(--sds-motion-200) var(--sds-ease-out);
+}
+
+.indeterminate .bar {
+  width: 40%;
+  animation: sds-progress-indeterminate 1.2s var(--sds-ease-out) infinite;
+}
+
+@keyframes sds-progress-indeterminate {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(250%); }
+}

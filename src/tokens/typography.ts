@@ -19,6 +19,7 @@ export const fontSize = {
   pageTitleMobile: "var(--sds-text-page-title-mobile)",
   pageTitle: "var(--sds-text-page-title)",
   display: "var(--sds-text-display)",
+  score: "var(--sds-text-score)",
 } as const;
 
 export const fontWeight = {

@@ -36,3 +36,25 @@
   border-radius: var(--sds-radius-6);
   background: var(--sds-color-action-primary);
 }
+
+.radiusChip {
+  height: 4.5rem;
+  background: var(--sds-color-action-subtle);
+  border: 1px solid var(--sds-color-action-border);
+}
+
+.elevationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: var(--sds-space-24);
+}
+
+.elevationCard {
+  padding: var(--sds-space-24);
+  border-radius: var(--sds-radius-12);
+  background: var(--sds-color-surface-default);
+  border: 1px solid var(--sds-color-border-default);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sds-space-8);
+}

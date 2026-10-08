@@ -7,6 +7,7 @@ export type TextVariant =
   | "pageTitle"
   | "heading"
   | "subheading"
+  | "sectionTitle"
   | "body"
   | "label"
   | "caption";
@@ -28,6 +29,7 @@ const defaultElement: Record<TextVariant, ElementType> = {
   pageTitle: "h1",
   heading: "h2",
   subheading: "h3",
+  sectionTitle: "h3",
   body: "p",
   label: "span",
   caption: "span",
@@ -38,6 +40,7 @@ const variantClass: Record<TextVariant, string> = {
   pageTitle: styles.pageTitle,
   heading: styles.heading,
   subheading: styles.subheading,
+  sectionTitle: styles.sectionTitle,
   body: styles.body,
   label: styles.label,
   caption: styles.caption,

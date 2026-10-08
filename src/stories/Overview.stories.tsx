@@ -2,13 +2,19 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Alert } from "../components/Alert";
 import { Avatar } from "../components/Avatar";
 import { Badge } from "../components/Badge";
+import { Breadcrumbs } from "../components/Breadcrumbs";
 import { Button } from "../components/Button";
 import { IconButton } from "../components/IconButton";
 import { Input } from "../components/Input";
+import { NumberInput } from "../components/NumberInput";
 import { PageHeading } from "../components/PageHeading";
+import { Progress } from "../components/Progress";
+import { Radio } from "../components/Radio";
+import { Search } from "../components/Search";
 import { Select } from "../components/Select";
 import { Stack } from "../components/Stack";
 import { Switch } from "../components/Switch";
+import { Tab, Tabs } from "../components/Tabs";
 import { Text } from "../components/Text";
 import { Textarea } from "../components/Textarea";
 import { Toggle } from "../components/Toggle";
@@ -31,9 +37,15 @@ function HelpIcon() {
 function OverviewPage() {
   return (
     <Stack gap={32} style={{ maxWidth: "42rem" }}>
+      <Breadcrumbs
+        items={[
+          { label: "Library", href: "#" },
+          { label: "Create role play" },
+        ]}
+      />
       <PageHeading
         title="Studio DS"
-        description="Component library on Studio · Semantic tokens — foundations first, then core UI in Storybook."
+        description="Component library on Studio · Semantic tokens — foundations, forms, and navigation in Storybook."
         action={
           <Stack gap={8} direction="row" align="center">
             <IconButton aria-label="Help" appearance="quiet">
@@ -44,8 +56,17 @@ function OverviewPage() {
         }
       />
 
+      <Tabs defaultValue="details">
+        <Tab value="details">Details</Tab>
+        <Tab value="audience" count={3} showCount>
+          Audience
+        </Tab>
+        <Tab value="review">Review</Tab>
+      </Tabs>
+
       <Stack gap={16}>
         <Text variant="heading">Composition</Text>
+        <Search placeholder="Search role plays" />
         <Stack gap={8} direction="row" align="center">
           <Avatar initials="JL" size={36} />
           <Stack gap={4}>
@@ -73,6 +94,19 @@ function OverviewPage() {
           defaultValue="Practice handling price objections with measurable ROI evidence."
           helperText="A clear objective keeps the conversation and evaluation aligned."
         />
+        <Stack gap={8}>
+          <Text variant="label">Difficulty</Text>
+          <Stack gap={8} direction="row">
+            <Radio name="difficulty" label="Beginner" layout="compact" defaultChecked />
+            <Radio name="difficulty" label="Intermediate" layout="compact" />
+            <Radio name="difficulty" label="Advanced" layout="compact" />
+          </Stack>
+        </Stack>
+        <Stack gap={8} direction="row" align="center">
+          <Text variant="label">Weight</Text>
+          <NumberInput defaultValue={3} min={0} max={10} aria-label="Criterion weight" />
+        </Stack>
+        <Progress value={42} aria-label="Authoring progress" />
         <Switch label="Email digests" defaultChecked />
         <Toggle
           label="Challenge weak answers"

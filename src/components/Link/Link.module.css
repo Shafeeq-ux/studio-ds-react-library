@@ -1,0 +1,15 @@
+.link {
+  color: var(--sds-color-action-foreground);
+  font-family: var(--sds-font-sans);
+  font-size: inherit;
+  font-weight: var(--sds-font-weight-semibold);
+  line-height: inherit;
+  text-decoration: none;
+}
+
+.link:hover { text-decoration: underline; }
+.link:focus-visible {
+  outline: 2px solid var(--sds-color-focus-ring);
+  outline-offset: 2px;
+  border-radius: 2px;
+}

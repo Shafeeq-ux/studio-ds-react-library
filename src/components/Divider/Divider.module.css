@@ -1,0 +1,18 @@
+.root {
+  border: 0;
+  margin: 0;
+  background: var(--sds-color-border-default);
+}
+
+.horizontal {
+  display: block;
+  width: 100%;
+  height: var(--sds-border-1);
+}
+
+.vertical {
+  display: inline-block;
+  width: var(--sds-border-1);
+  height: 1em;
+  align-self: stretch;
+}
