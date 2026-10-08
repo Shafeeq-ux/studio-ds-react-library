@@ -7,6 +7,7 @@ export const fontFamily = {
 } as const;
 
 export const fontSize = {
+  initialsCompact: "var(--sds-text-initials-compact)",
   metadata: "var(--sds-text-metadata)",
   caption: "var(--sds-text-caption)",
   label: "var(--sds-text-label)",

@@ -46,8 +46,9 @@ npm run lint
 | Area | Contents |
 | ---- | -------- |
 | Tokens | Semantic color (light/dark), Inter type scale, spacing 4–64, radii, motion |
-| Components | `Button` (Primary/Secondary + ghost/danger), `Text`, `Stack` |
-| Docs | Storybook foundations + component stories; theme toolbar for Dark |
+| Foundations | `Text`, `Stack` |
+| Core | `Button`, `Alert`, `Badge`, `Avatar`, `Input` |
+| Docs | Storybook Overview, Foundations, and per-component stories; Light/Dark toolbar |
 
 ## Figma mapping
 
