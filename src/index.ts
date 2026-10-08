@@ -3,6 +3,7 @@ export { Text, type TextProps, type TextVariant } from "./components/Text";
 export { Stack, type StackProps } from "./components/Stack";
 export {
   colors,
+  colorValuesLight,
   fontFamily,
   fontSize,
   fontWeight,

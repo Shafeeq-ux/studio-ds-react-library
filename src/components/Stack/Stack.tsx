@@ -32,7 +32,7 @@ export function Stack({
   children,
   as: Component = "div",
   direction = "column",
-  gap = 3,
+  gap = 16,
   align = "stretch",
   justify = "start",
   wrap = false,

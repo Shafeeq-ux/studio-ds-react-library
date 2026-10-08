@@ -1,7 +1,9 @@
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 import styles from "./Button.module.css";
 
+/** Maps to Figma Studio/Button Appearance. */
 export type ButtonVariant = "primary" | "secondary" | "ghost" | "danger";
+/** Maps to Figma Size: Standard → md, Compact → sm. */
 export type ButtonSize = "sm" | "md" | "lg";
 
 export type ButtonProps = {

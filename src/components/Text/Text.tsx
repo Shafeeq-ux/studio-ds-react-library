@@ -1,15 +1,21 @@
 import type { CSSProperties, ElementType, HTMLAttributes, ReactNode } from "react";
 import styles from "./Text.module.css";
 
-export type TextVariant = "display" | "title" | "body" | "label" | "caption";
+/** Maps to Studio · Typography roles used in product UI. */
+export type TextVariant =
+  | "display"
+  | "pageTitle"
+  | "heading"
+  | "subheading"
+  | "body"
+  | "label"
+  | "caption";
 
 type TextOwnProps = {
   children: ReactNode;
-  /** Typography style from the Studio DS type scale. */
   variant?: TextVariant;
-  /** Semantic element to render. Defaults from the variant. */
   as?: ElementType;
-  tone?: "default" | "muted";
+  tone?: "default" | "secondary" | "tertiary";
   className?: string;
   style?: CSSProperties;
 };
@@ -19,7 +25,9 @@ export type TextProps = TextOwnProps &
 
 const defaultElement: Record<TextVariant, ElementType> = {
   display: "h1",
-  title: "h2",
+  pageTitle: "h1",
+  heading: "h2",
+  subheading: "h3",
   body: "p",
   label: "span",
   caption: "span",
@@ -27,11 +35,19 @@ const defaultElement: Record<TextVariant, ElementType> = {
 
 const variantClass: Record<TextVariant, string> = {
   display: styles.display,
-  title: styles.title,
+  pageTitle: styles.pageTitle,
+  heading: styles.heading,
+  subheading: styles.subheading,
   body: styles.body,
   label: styles.label,
   caption: styles.caption,
 };
+
+const toneClass = {
+  default: undefined,
+  secondary: styles.secondary,
+  tertiary: styles.tertiary,
+} as const;
 
 export function Text({
   children,
@@ -46,7 +62,7 @@ export function Text({
   const classes = [
     styles.text,
     variantClass[variant],
-    tone === "muted" ? styles.muted : undefined,
+    toneClass[tone],
     className,
   ]
     .filter(Boolean)

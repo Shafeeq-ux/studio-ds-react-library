@@ -1,23 +1,27 @@
 /**
- * ASSUMPTION: Type scale stand-in until Figma text styles are exported.
+ * Typography tokens from Figma Studio · Typography.
+ * font-family/sans = Inter
  */
 export const fontFamily = {
-  display: "var(--sds-font-display)",
-  body: "var(--sds-font-body)",
+  sans: "var(--sds-font-sans)",
 } as const;
 
 export const fontSize = {
-  xs: "var(--sds-text-xs)",
-  sm: "var(--sds-text-sm)",
-  md: "var(--sds-text-md)",
-  lg: "var(--sds-text-lg)",
-  xl: "var(--sds-text-xl)",
-  "2xl": "var(--sds-text-2xl)",
+  metadata: "var(--sds-text-metadata)",
+  caption: "var(--sds-text-caption)",
+  label: "var(--sds-text-label)",
+  body: "var(--sds-text-body)",
+  conversation: "var(--sds-text-conversation)",
+  sectionTitle: "var(--sds-text-section-title)",
+  subheading: "var(--sds-text-subheading)",
+  heading: "var(--sds-text-heading)",
+  pageTitleMobile: "var(--sds-text-page-title-mobile)",
+  pageTitle: "var(--sds-text-page-title)",
+  display: "var(--sds-text-display)",
 } as const;
 
 export const fontWeight = {
   regular: "var(--sds-font-weight-regular)",
-  medium: "var(--sds-font-weight-medium)",
   semibold: "var(--sds-font-weight-semibold)",
 } as const;
 

@@ -4,6 +4,6 @@
   flex-wrap: var(--sds-stack-wrap, nowrap);
   align-items: var(--sds-stack-align, stretch);
   justify-content: var(--sds-stack-justify, flex-start);
-  gap: var(--sds-stack-gap, var(--sds-space-3));
+  gap: var(--sds-stack-gap, var(--sds-space-16));
   min-width: 0;
 }

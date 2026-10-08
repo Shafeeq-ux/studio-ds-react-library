@@ -5,35 +5,34 @@
 .swatchGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
-  gap: var(--sds-space-4);
+  gap: var(--sds-space-16);
 }
 
 .swatch {
   display: flex;
   flex-direction: column;
-  gap: var(--sds-space-2);
+  gap: var(--sds-space-8);
 }
 
 .swatchChip {
   height: 4.5rem;
-  border-radius: var(--sds-radius-md);
-  border: 1px solid var(--sds-color-border);
-  box-shadow: var(--sds-shadow-sm);
+  border-radius: var(--sds-radius-8);
+  border: 1px solid var(--sds-color-border-default);
 }
 
 .spaceRow {
   display: flex;
   align-items: center;
-  gap: var(--sds-space-3);
+  gap: var(--sds-space-16);
 }
 
 .spaceLabel {
-  width: 5rem;
+  width: 6rem;
   flex: 0 0 auto;
 }
 
 .spaceBar {
   height: 0.75rem;
-  border-radius: var(--sds-radius-sm);
-  background: var(--sds-color-primary);
+  border-radius: var(--sds-radius-6);
+  background: var(--sds-color-action-primary);
 }

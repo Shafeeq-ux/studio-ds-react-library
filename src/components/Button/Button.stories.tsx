@@ -22,6 +22,14 @@ const meta = {
       options: ["sm", "md", "lg"],
     },
   },
+  parameters: {
+    docs: {
+      description: {
+        component:
+          "Maps to Figma `Studio/Button` (Appearance Primary/Secondary; Size Standard→md, Compact→sm).",
+      },
+    },
+  },
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -47,9 +55,9 @@ export const Disabled: Story = {
 
 export const Sizes: Story = {
   render: () => (
-    <Stack gap={3} align="center" direction="row">
-      <Button size="sm">Small</Button>
-      <Button size="md">Medium</Button>
+    <Stack gap={16} align="center" direction="row">
+      <Button size="sm">Compact</Button>
+      <Button size="md">Standard</Button>
       <Button size="lg">Large</Button>
     </Stack>
   ),
@@ -57,14 +65,14 @@ export const Sizes: Story = {
 
 export const AllVariants: Story = {
   render: () => (
-    <Stack gap={3}>
-      <Stack gap={2} direction="row">
+    <Stack gap={16}>
+      <Stack gap={8} direction="row">
         <Button variant="primary">Primary</Button>
         <Button variant="secondary">Secondary</Button>
         <Button variant="ghost">Ghost</Button>
         <Button variant="danger">Danger</Button>
       </Stack>
-      <Stack gap={2} direction="row">
+      <Stack gap={8} direction="row">
         <Button variant="primary" disabled>
           Primary
         </Button>

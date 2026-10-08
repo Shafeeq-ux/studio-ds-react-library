@@ -1,47 +1,58 @@
 .text {
   margin: 0;
-  color: var(--sds-color-ink);
+  color: var(--sds-color-text-primary);
+  font-family: var(--sds-font-sans);
 }
 
-.muted {
-  color: var(--sds-color-ink-muted);
+.secondary {
+  color: var(--sds-color-text-secondary);
+}
+
+.tertiary {
+  color: var(--sds-color-text-tertiary);
 }
 
 .display {
-  font-family: var(--sds-font-display);
-  font-size: var(--sds-text-2xl);
+  font-size: var(--sds-text-display);
   font-weight: var(--sds-font-weight-semibold);
-  line-height: var(--sds-leading-tight);
+  line-height: var(--sds-leading-display);
   letter-spacing: -0.02em;
 }
 
-.title {
-  font-family: var(--sds-font-display);
-  font-size: var(--sds-text-xl);
+.pageTitle {
+  font-size: var(--sds-text-page-title);
   font-weight: var(--sds-font-weight-semibold);
-  line-height: var(--sds-leading-snug);
+  line-height: var(--sds-leading-page-title);
   letter-spacing: -0.015em;
 }
 
+.heading {
+  font-size: var(--sds-text-heading);
+  font-weight: var(--sds-font-weight-semibold);
+  line-height: var(--sds-leading-heading);
+}
+
+.subheading {
+  font-size: var(--sds-text-subheading);
+  font-weight: var(--sds-font-weight-semibold);
+  line-height: 1.5;
+}
+
 .body {
-  font-family: var(--sds-font-body);
-  font-size: var(--sds-text-md);
+  font-size: var(--sds-text-body);
   font-weight: var(--sds-font-weight-regular);
-  line-height: var(--sds-leading-normal);
+  line-height: var(--sds-leading-body);
 }
 
 .label {
-  font-family: var(--sds-font-body);
-  font-size: var(--sds-text-sm);
+  font-size: var(--sds-text-label);
   font-weight: var(--sds-font-weight-semibold);
-  line-height: var(--sds-leading-snug);
-  letter-spacing: 0.01em;
+  line-height: var(--sds-leading-label);
 }
 
 .caption {
-  font-family: var(--sds-font-body);
-  font-size: var(--sds-text-xs);
+  font-size: var(--sds-text-caption);
   font-weight: var(--sds-font-weight-regular);
-  line-height: var(--sds-leading-normal);
-  color: var(--sds-color-ink-muted);
+  line-height: var(--sds-leading-caption);
+  color: var(--sds-color-text-tertiary);
 }

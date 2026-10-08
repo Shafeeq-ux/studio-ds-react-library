@@ -1,64 +1,132 @@
 /**
- * Studio DS design tokens as CSS custom properties.
- *
- * ASSUMPTION: Values are a coherent stand-in until the Figma file
- * (Studio DS, node 29:1783) can be exported. Replace with sourced styles
- * when Figma access is available.
+ * Studio DS design tokens from Figma
+ * file: 8wXGfy006ncSwwx6BPrAAh
+ * collections: Studio · Semantic (Light/Dark), Studio · Typography, Studio · Primitives
+ * Source frame: 01 · Colors — Surfaces & Text (node 29:1783)
  */
 :root,
-.sds-root {
-  /* Color — ink / paper */
-  --sds-color-ink: #12141a;
-  --sds-color-ink-muted: #5c6170;
-  --sds-color-surface: #f7f6f3;
-  --sds-color-surface-raised: #ffffff;
-  --sds-color-border: #d9d6cf;
-  --sds-color-border-strong: #b8b3a8;
+.sds-root,
+[data-sds-theme="light"] {
+  /* Semantic color — Light */
+  --sds-color-text-primary: #202630;
+  --sds-color-text-secondary: #596474;
+  --sds-color-text-tertiary: #697587;
+  --sds-color-text-reference: #1f293b;
+  --sds-color-text-on-action: #ffffff;
 
-  /* Color — brand & semantic */
-  --sds-color-primary: #0f6e6b;
-  --sds-color-primary-hover: #0c5a58;
-  --sds-color-primary-contrast: #ffffff;
-  --sds-color-danger: #b42318;
-  --sds-color-danger-hover: #912018;
-  --sds-color-danger-contrast: #ffffff;
-  --sds-color-focus-ring: #0f6e6b;
+  --sds-color-background-canvas: #f5f6f8;
+  --sds-color-surface-default: #ffffff;
+  --sds-color-surface-secondary: #eef1f5;
+  --sds-color-surface-disabled: #e8ebf0;
+  --sds-color-surface-hover: #f2f5fa;
 
-  /* Typography */
-  --sds-font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
-  --sds-font-body: "Source Sans 3", "Source Sans Pro", "Segoe UI", sans-serif;
+  --sds-color-border-default: #dce1e8;
+  --sds-color-border-control: #dce1e8;
+
+  --sds-color-action-primary: #3456c8;
+  --sds-color-action-hover: #2846ae;
+  --sds-color-action-pressed: #223b95;
+  --sds-color-action-foreground: #3456c8;
+  --sds-color-action-subtle: #eef2ff;
+  --sds-color-action-border: #d9e0fa;
+
+  --sds-color-focus-ring: #2549be;
+
+  --sds-color-status-error: #b33434;
+  --sds-color-status-error-surface: #fff1f1;
+  --sds-color-status-success: #237348;
+  --sds-color-status-success-surface: #edf7f1;
+  --sds-color-status-warning: #875b13;
+  --sds-color-status-warning-surface: #fff7e7;
+
+  --sds-color-ai-foreground: #6953a4;
+  --sds-color-ai-surface: #f4f1fa;
+  --sds-color-ai-border: #ddd5ee;
+
+  /* Typography — Studio · Typography */
+  --sds-font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
   --sds-font-weight-regular: 400;
-  --sds-font-weight-medium: 500;
   --sds-font-weight-semibold: 600;
 
-  --sds-text-xs: 0.75rem;
-  --sds-text-sm: 0.875rem;
-  --sds-text-md: 1rem;
-  --sds-text-lg: 1.25rem;
-  --sds-text-xl: 1.75rem;
-  --sds-text-2xl: 2.5rem;
+  --sds-text-metadata: 0.6875rem; /* 11 */
+  --sds-text-caption: 0.75rem; /* 12 */
+  --sds-text-label: 0.8125rem; /* 13 */
+  --sds-text-body: 0.875rem; /* 14 */
+  --sds-text-conversation: 0.9375rem; /* 15 */
+  --sds-text-section-title: 1rem; /* 16 */
+  --sds-text-subheading: 1.125rem; /* 18 */
+  --sds-text-heading: 1.25rem; /* 20 */
+  --sds-text-page-title-mobile: 1.5rem; /* 24 */
+  --sds-text-page-title: 1.75rem; /* 28 */
+  --sds-text-display: 2rem; /* 32 */
 
-  --sds-leading-tight: 1.2;
-  --sds-leading-snug: 1.35;
-  --sds-leading-normal: 1.5;
+  --sds-leading-caption: 1.125rem;
+  --sds-leading-label: 1.375rem;
+  --sds-leading-body: 1.3125rem;
+  --sds-leading-heading: 1.625rem;
+  --sds-leading-page-title: 2.25rem;
+  --sds-leading-display: 2.625rem;
 
-  /* Spacing (4px base) */
-  --sds-space-1: 0.25rem;
-  --sds-space-2: 0.5rem;
-  --sds-space-3: 0.75rem;
-  --sds-space-4: 1rem;
-  --sds-space-5: 1.5rem;
-  --sds-space-6: 2rem;
-  --sds-space-7: 3rem;
+  /* Spacing — Studio · Primitives */
+  --sds-space-0: 0;
+  --sds-space-4: 0.25rem;
+  --sds-space-8: 0.5rem;
+  --sds-space-16: 1rem;
+  --sds-space-24: 1.5rem;
+  --sds-space-32: 2rem;
+  --sds-space-40: 2.5rem;
+  --sds-space-48: 3rem;
+  --sds-space-64: 4rem;
 
-  /* Radius & elevation */
-  --sds-radius-sm: 0.25rem;
-  --sds-radius-md: 0.5rem;
-  --sds-radius-lg: 0.75rem;
-  --sds-shadow-sm: 0 1px 2px rgb(18 20 26 / 0.06), 0 1px 3px rgb(18 20 26 / 0.08);
+  /* Radius */
+  --sds-radius-0: 0;
+  --sds-radius-6: 0.375rem;
+  --sds-radius-8: 0.5rem;
+  --sds-radius-12: 0.75rem;
 
   /* Motion */
+  --sds-motion-120: 120ms;
+  --sds-motion-160: 160ms;
+  --sds-motion-200: 200ms;
   --sds-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-  --sds-duration-fast: 140ms;
-  --sds-duration-normal: 220ms;
+
+  /* Target size */
+  --sds-target-44: 2.75rem;
+}
+
+[data-sds-theme="dark"] {
+  --sds-color-text-primary: #edf1f7;
+  --sds-color-text-secondary: #bbc5d4;
+  --sds-color-text-tertiary: #a5b1c3;
+  --sds-color-text-reference: #edf1f7;
+  --sds-color-text-on-action: #ffffff;
+
+  --sds-color-background-canvas: #131923;
+  --sds-color-surface-default: #1c2330;
+  --sds-color-surface-secondary: #232b37;
+  --sds-color-surface-disabled: #303947;
+  --sds-color-surface-hover: #303a4b;
+
+  --sds-color-border-default: #414d60;
+  --sds-color-border-control: #8593a7;
+
+  --sds-color-action-primary: #4e6dd0;
+  --sds-color-action-hover: #5270d1;
+  --sds-color-action-pressed: #576fc9;
+  --sds-color-action-foreground: #a6bbff;
+  --sds-color-action-subtle: #242f4c;
+  --sds-color-action-border: #829ce6;
+
+  --sds-color-focus-ring: #a6bbff;
+
+  --sds-color-status-error: #f2a1a1;
+  --sds-color-status-error-surface: #3b252b;
+  --sds-color-status-success: #87d6a6;
+  --sds-color-status-success-surface: #1b3228;
+  --sds-color-status-warning: #efc479;
+  --sds-color-status-warning-surface: #372e20;
+
+  --sds-color-ai-foreground: #c4b1ed;
+  --sds-color-ai-surface: #2b253b;
+  --sds-color-ai-border: #8e79ae;
 }

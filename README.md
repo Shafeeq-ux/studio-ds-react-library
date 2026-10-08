@@ -1,8 +1,8 @@
 # Studio DS
 
-React + TypeScript design system component library with Storybook documentation.
+React + TypeScript design system component library with Storybook documentation, aligned to the [Studio DS Figma file](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS?node-id=29-1783).
 
-> **Figma note:** The [Studio DS Figma file](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS?node-id=29-1783) was not accessible during the initial scaffold. Color, type, and spacing tokens are provisional (`ASSUMPTION` markers in `src/tokens/`) and should be aligned to exported styles when Figma access is available. See the project plan for mapping intent.
+Tokens come from Figma collections **Studio · Semantic** (Light/Dark), **Studio · Typography** (Inter), and **Studio · Primitives** (spacing, radius, motion).
 
 ## Install
 
@@ -16,15 +16,19 @@ import "studio-ds/tokens.css";
 
 export function Example() {
   return (
-    <Stack gap={3}>
-      <Text variant="title">Studio DS</Text>
-      <Button variant="primary">Continue</Button>
-    </Stack>
+    <div className="sds-root" data-sds-theme="light">
+      <Stack gap={16}>
+        <Text variant="heading">Studio DS</Text>
+        <Button variant="primary">Continue</Button>
+      </Stack>
+    </div>
   );
 }
 ```
 
 Peer dependencies: `react` and `react-dom` (^18 or ^19).
+
+Use `data-sds-theme="dark"` on a root element to switch semantic colors.
 
 ## Develop
 
@@ -41,19 +45,19 @@ npm run lint
 
 | Area | Contents |
 | ---- | -------- |
-| Tokens | CSS variables + TS constants (color, type, space, radius) |
-| Components | `Button`, `Text`, `Stack` |
-| Docs | Storybook foundations + component stories |
+| Tokens | Semantic color (light/dark), Inter type scale, spacing 4–64, radii, motion |
+| Components | `Button` (Primary/Secondary + ghost/danger), `Text`, `Stack` |
+| Docs | Storybook foundations + component stories; theme toolbar for Dark |
 
-## Package layout
+## Figma mapping
 
-```
-src/
-  tokens/           # CSS + TS design tokens
-  components/       # Button, Text, Stack
-  stories/          # Foundations overview
-  index.ts          # public API
-```
+| Figma | Code |
+| ----- | ---- |
+| `text/primary`, `surface/default`, `action/primary`, … | `--sds-color-*` / `colors.*` |
+| `font-family/sans` = Inter | `--sds-font-sans` |
+| `font-size/*` | `--sds-text-*` / `Text` variants |
+| `spacing/*` | `--sds-space-*` / `Stack` `gap` |
+| `Studio/Button` Appearance Primary/Secondary | `Button` `variant` |
 
 ## License
 

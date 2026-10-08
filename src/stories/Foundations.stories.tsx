@@ -1,68 +1,72 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Text } from "../components/Text";
 import { Stack } from "../components/Stack";
+import { colorValuesLight } from "../tokens";
 import styles from "./Foundations.module.css";
 
-/**
- * ASSUMPTION: Swatches mirror provisional tokens until Figma export.
- */
 const colorSwatches = [
-  { name: "Ink", varName: "--sds-color-ink" },
-  { name: "Ink muted", varName: "--sds-color-ink-muted" },
-  { name: "Surface", varName: "--sds-color-surface" },
-  { name: "Surface raised", varName: "--sds-color-surface-raised" },
-  { name: "Border", varName: "--sds-color-border" },
-  { name: "Primary", varName: "--sds-color-primary" },
-  { name: "Danger", varName: "--sds-color-danger" },
+  { name: "text/primary", hex: colorValuesLight.textPrimary, css: "--sds-color-text-primary" },
+  { name: "text/secondary", hex: colorValuesLight.textSecondary, css: "--sds-color-text-secondary" },
+  { name: "text/tertiary", hex: colorValuesLight.textTertiary, css: "--sds-color-text-tertiary" },
+  { name: "background/canvas", hex: colorValuesLight.backgroundCanvas, css: "--sds-color-background-canvas" },
+  { name: "surface/default", hex: colorValuesLight.surfaceDefault, css: "--sds-color-surface-default" },
+  { name: "surface/secondary", hex: colorValuesLight.surfaceSecondary, css: "--sds-color-surface-secondary" },
+  { name: "border/default", hex: colorValuesLight.borderDefault, css: "--sds-color-border-default" },
+  { name: "action/primary", hex: colorValuesLight.actionPrimary, css: "--sds-color-action-primary" },
+  { name: "action/hover", hex: colorValuesLight.actionHover, css: "--sds-color-action-hover" },
+  { name: "focus/ring", hex: colorValuesLight.focusRing, css: "--sds-color-focus-ring" },
+  { name: "status/error", hex: colorValuesLight.statusError, css: "--sds-color-status-error" },
+  { name: "status/success", hex: colorValuesLight.statusSuccess, css: "--sds-color-status-success" },
 ] as const;
 
-const spaceSteps = [1, 2, 3, 4, 5, 6, 7] as const;
+const spaceSteps = [4, 8, 16, 24, 32, 40, 48, 64] as const;
 
 function FoundationsPage() {
   return (
-    <Stack gap={6} className={styles.page}>
-      <Stack gap={2}>
+    <Stack gap={32} className={styles.page}>
+      <Stack gap={8}>
         <Text variant="display">Foundations</Text>
-        <Text tone="muted">
-          Provisional Studio DS tokens. Values are labeled ASSUMPTION in source
-          until Figma node 29:1783 can be exported.
+        <Text tone="secondary">
+          Tokens sourced from Figma Studio · Semantic / Typography / Primitives
+          (node 29:1783 — Colors / Surfaces & text). Toggle Storybook theme for Dark.
         </Text>
       </Stack>
 
-      <Stack gap={3}>
-        <Text variant="title">Color</Text>
+      <Stack gap={16}>
+        <Text variant="heading">Color</Text>
         <div className={styles.swatchGrid}>
           {colorSwatches.map((swatch) => (
-            <div key={swatch.varName} className={styles.swatch}>
+            <div key={swatch.css} className={styles.swatch}>
               <div
                 className={styles.swatchChip}
-                style={{ background: `var(${swatch.varName})` }}
+                style={{ background: `var(${swatch.css})` }}
               />
               <Text variant="label">{swatch.name}</Text>
-              <Text variant="caption">{swatch.varName}</Text>
+              <Text variant="caption">{swatch.hex}</Text>
             </div>
           ))}
         </div>
       </Stack>
 
-      <Stack gap={3}>
-        <Text variant="title">Typography</Text>
-        <Stack gap={3}>
-          <Text variant="display">Fraunces — Display</Text>
-          <Text variant="title">Fraunces — Title</Text>
-          <Text variant="body">Source Sans 3 — Body copy for UI and reading.</Text>
-          <Text variant="label">Source Sans 3 — Label</Text>
-          <Text variant="caption">Source Sans 3 — Caption</Text>
+      <Stack gap={16}>
+        <Text variant="heading">Typography</Text>
+        <Stack gap={16}>
+          <Text variant="display">Inter — Display 32</Text>
+          <Text variant="pageTitle">Inter — Page title 28</Text>
+          <Text variant="heading">Inter — Heading 20</Text>
+          <Text variant="body">Inter — Body 14 for UI and reading.</Text>
+          <Text variant="label">Inter — Label 13</Text>
+          <Text variant="caption">Inter — Caption 12</Text>
         </Stack>
       </Stack>
 
-      <Stack gap={3}>
-        <Text variant="title">Spacing</Text>
-        <Stack gap={2}>
+      <Stack gap={16}>
+        <Text variant="heading">Spacing</Text>
+        <Stack gap={8}>
           {spaceSteps.map((step) => (
             <div key={step} className={styles.spaceRow}>
               <Text variant="label" className={styles.spaceLabel}>
-                space-{step}
+                spacing/{step}
               </Text>
               <div
                 className={styles.spaceBar}

@@ -14,11 +14,19 @@ const meta = {
   argTypes: {
     variant: {
       control: "select",
-      options: ["display", "title", "body", "label", "caption"],
+      options: [
+        "display",
+        "pageTitle",
+        "heading",
+        "subheading",
+        "body",
+        "label",
+        "caption",
+      ],
     },
     tone: {
       control: "select",
-      options: ["default", "muted"],
+      options: ["default", "secondary", "tertiary"],
     },
   },
 } satisfies Meta<typeof Text>;
@@ -29,7 +37,7 @@ type Story = StoryObj<typeof meta>;
 export const Body: Story = {
   args: {
     children:
-      "Body text sets the reading voice for Studio interfaces — clear, calm, and slightly editorial.",
+      "Body text (14 / Inter) is the default reading voice for Studio interfaces.",
   },
 };
 
@@ -42,16 +50,19 @@ export const Display: Story = {
 
 export const TypeScale: Story = {
   render: () => (
-    <Stack gap={4}>
-      <Text variant="display">Display — Studio DS</Text>
-      <Text variant="title">Title — Foundations</Text>
-      <Text variant="body">
-        Body — Use for paragraphs, descriptions, and most interface copy.
+    <Stack gap={16}>
+      <Text variant="display">Display — 32</Text>
+      <Text variant="pageTitle">Page title — 28</Text>
+      <Text variant="heading">Heading — 20</Text>
+      <Text variant="subheading">Subheading — 18</Text>
+      <Text variant="body">Body — 14 · Primary reading on neutral surfaces.</Text>
+      <Text variant="label">Label — 13</Text>
+      <Text variant="caption">Caption — 12</Text>
+      <Text variant="body" tone="secondary">
+        Secondary tone — supporting information.
       </Text>
-      <Text variant="label">Label — Field and control labels</Text>
-      <Text variant="caption">Caption — Hints, metadata, and quiet asides</Text>
-      <Text variant="body" tone="muted">
-        Muted body — secondary supporting copy.
+      <Text variant="body" tone="tertiary">
+        Tertiary tone — low-emphasis metadata.
       </Text>
     </Stack>
   ),

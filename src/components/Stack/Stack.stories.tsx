@@ -14,13 +14,12 @@ type Story = StoryObj<typeof meta>;
 
 export const Column: Story = {
   args: {
-    gap: 3,
+    gap: 16,
     children: (
       <>
-        <Text variant="title">Stack</Text>
-        <Text tone="muted">
-          A light layout primitive for composing Studio DS components with
-          consistent gaps.
+        <Text variant="heading">Stack</Text>
+        <Text tone="secondary">
+          Layout primitive using Studio spacing tokens (4–64).
         </Text>
         <Button>Primary action</Button>
       </>
@@ -31,7 +30,7 @@ export const Column: Story = {
 export const Row: Story = {
   args: {
     direction: "row",
-    gap: 2,
+    gap: 8,
     align: "center",
     children: (
       <>
