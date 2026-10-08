@@ -1,0 +1,6 @@
+.root {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--sds-space-16);
+  width: 100%; min-height: var(--sds-target-44); flex-wrap: wrap;
+}
+.start, .end { display: inline-flex; align-items: center; gap: var(--sds-space-8); flex: 1 1 auto; min-width: 0; }
+.end { justify-content: flex-end; }

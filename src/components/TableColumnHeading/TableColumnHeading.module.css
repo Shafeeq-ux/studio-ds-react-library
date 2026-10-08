@@ -1,0 +1,10 @@
+.root {
+  display: inline-flex; align-items: center; gap: var(--sds-space-4);
+  margin: 0; padding: 0 var(--sds-space-16); min-height: var(--sds-target-44);
+  color: var(--sds-color-text-secondary); font-family: var(--sds-font-sans);
+  font-size: var(--sds-text-caption); font-weight: 600; text-transform: none;
+  background: transparent; border: 0; cursor: default;
+}
+.sortable { cursor: pointer; }
+.sortable:hover { color: var(--sds-color-text-primary); }
+.sortable:focus-visible { outline: 2px solid var(--sds-color-focus-ring); outline-offset: 2px; border-radius: 4px; }

@@ -1,0 +1,5 @@
+/* Presentational wrapper — styles live on Tabs. */
+.root {
+  display: block;
+  width: 100%;
+}

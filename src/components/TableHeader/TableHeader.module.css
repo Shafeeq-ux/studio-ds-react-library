@@ -1,0 +1,5 @@
+.root {
+  display: grid; align-items: center; width: 100%; min-height: var(--sds-target-44);
+  border-bottom: 1px solid var(--sds-color-border-default);
+  background: var(--sds-color-surface-secondary);
+}

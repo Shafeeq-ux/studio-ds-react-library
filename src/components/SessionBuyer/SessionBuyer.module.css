@@ -1,0 +1,3 @@
+.root { display: flex; align-items: center; gap: var(--sds-space-16); }
+.name { margin: 0; font-family: var(--sds-font-sans); font-size: var(--sds-text-section-title); font-weight: 600; color: var(--sds-color-text-primary); }
+.role { margin: 0; font-size: var(--sds-text-body); color: var(--sds-color-text-secondary); }

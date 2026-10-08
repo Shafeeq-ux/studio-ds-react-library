@@ -1,0 +1,9 @@
+.root {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--sds-space-16);
+  box-sizing: border-box; width: 100%; min-height: 4.5rem;
+  padding: 0 var(--sds-space-24);
+  border-bottom: 1px solid var(--sds-color-border-default);
+  background: var(--sds-color-surface-default);
+}
+.start, .end { display: inline-flex; align-items: center; gap: var(--sds-space-8); min-width: 0; }
+.title { margin: 0; font-family: var(--sds-font-sans); font-size: var(--sds-text-section-title); font-weight: 600; color: var(--sds-color-text-primary); }

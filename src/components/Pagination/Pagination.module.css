@@ -1,0 +1,6 @@
+.root {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--sds-space-16);
+  width: 100%; min-height: var(--sds-target-44);
+}
+.label { margin: 0; color: var(--sds-color-text-secondary); font-family: var(--sds-font-sans); font-size: var(--sds-text-body); }
+.actions { display: inline-flex; gap: var(--sds-space-8); }

@@ -1,0 +1,3 @@
+.root { display: flex; gap: var(--sds-space-8); width: 100%; flex-wrap: wrap; }
+.wide .option { flex: 1 1 10rem; }
+.compact .option { flex: 1 1 6rem; max-width: 10rem; }

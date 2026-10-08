@@ -1,0 +1,2 @@
+.root { display: flex; gap: var(--sds-space-8); width: 100%; overflow-x: auto; }
+.compact { flex-direction: column; }

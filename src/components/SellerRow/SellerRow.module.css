@@ -1,0 +1,9 @@
+.root {
+  display: grid; align-items: center; gap: var(--sds-space-8);
+  width: 100%; min-height: 4.5rem; padding: var(--sds-space-16) 0;
+  border-bottom: 1px solid var(--sds-color-border-default);
+}
+.name { margin: 0; font-family: var(--sds-font-sans); font-size: var(--sds-text-body); font-weight: 600; color: var(--sds-color-text-primary); display: flex; align-items: center; gap: var(--sds-space-8); }
+.cell { margin: 0; font-family: var(--sds-font-sans); font-size: var(--sds-text-body); color: var(--sds-color-text-secondary); }
+.trendPos { color: var(--sds-color-status-success); font-weight: 600; }
+.trendNeg { color: var(--sds-color-status-error); font-weight: 600; }

@@ -1,0 +1,10 @@
+.root {
+  display: flex; gap: var(--sds-space-16); align-items: flex-start;
+  width: 100%; padding: var(--sds-space-16);
+  border: 1px solid var(--sds-color-border-default); border-radius: var(--sds-radius-12);
+  background: var(--sds-color-surface-default);
+}
+.icon { color: var(--sds-color-ai-foreground); margin-top: 2px; }
+.copy { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.criterion { margin: 0; font-size: var(--sds-text-body); font-weight: 600; color: var(--sds-color-text-primary); }
+.description { margin: 0; font-size: var(--sds-text-body); color: var(--sds-color-text-secondary); }

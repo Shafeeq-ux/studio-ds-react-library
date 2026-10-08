@@ -1,0 +1,8 @@
+.root {
+  display: flex; align-items: center; justify-content: flex-end; gap: var(--sds-space-8);
+  box-sizing: border-box; width: 100%; min-height: 5rem;
+  padding: var(--sds-space-16) var(--sds-space-24);
+  border-top: 1px solid var(--sds-color-border-default);
+  background: var(--sds-color-surface-default);
+  box-shadow: var(--sds-elevation-subtle);
+}

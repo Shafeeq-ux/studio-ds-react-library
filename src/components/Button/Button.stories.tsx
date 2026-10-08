@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Button } from "./Button";
 import { Stack } from "../Stack";
+import { Icon } from "../Icon";
 
 const meta = {
   title: "Components/Button",
@@ -26,7 +27,7 @@ const meta = {
     docs: {
       description: {
         component:
-          "Maps to Figma `Studio/Button` (Appearance Primary/Secondary; Size Standard→md, Compact→sm).",
+          "Maps to Figma `Studio/Button` Appearance Primary/Secondary/Ghost/Danger, Size Compact→sm / Standard→md, Layout icon+label via `icon`.",
       },
     },
   },
@@ -63,6 +64,23 @@ export const Sizes: Story = {
   ),
 };
 
+export const WithIcon: Story = {
+  args: {
+    children: "Create",
+    icon: <Icon glyph="plus" size={16} />,
+    layout: "icon-label",
+  },
+};
+
+export const IconEnd: Story = {
+  args: {
+    children: "Continue",
+    icon: <Icon glyph="arrow-right" size={16} />,
+    iconPosition: "end",
+    layout: "icon-label",
+  },
+};
+
 export const AllVariants: Story = {
   render: () => (
     <Stack gap={16}>
@@ -71,6 +89,14 @@ export const AllVariants: Story = {
         <Button variant="secondary">Secondary</Button>
         <Button variant="ghost">Ghost</Button>
         <Button variant="danger">Danger</Button>
+      </Stack>
+      <Stack gap={8} direction="row">
+        <Button variant="primary" icon={<Icon glyph="sparkles" size={16} />}>
+          Generate
+        </Button>
+        <Button variant="secondary" icon={<Icon glyph="download" size={16} />}>
+          Download
+        </Button>
       </Stack>
       <Stack gap={8} direction="row">
         <Button variant="primary" disabled>

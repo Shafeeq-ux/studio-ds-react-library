@@ -1,0 +1,9 @@
+.root {
+  display: flex; flex-direction: column; gap: var(--sds-space-12);
+  box-sizing: border-box; width: 100%; max-width: 24rem;
+  padding: var(--sds-space-24); border: 1px solid var(--sds-color-border-default);
+  border-radius: var(--sds-radius-12); background: var(--sds-color-surface-default);
+  box-shadow: var(--sds-elevation-subtle);
+}
+.title { margin: 0; font-size: var(--sds-text-section-title); font-weight: 600; color: var(--sds-color-text-primary); }
+.meta, .buyer, .completion, .score { margin: 0; font-size: var(--sds-text-body); color: var(--sds-color-text-secondary); }

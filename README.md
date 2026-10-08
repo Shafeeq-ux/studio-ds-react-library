@@ -1,8 +1,8 @@
 # Studio DS
 
-React + TypeScript design system component library with Storybook documentation, aligned to the [Studio DS Figma file](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS?node-id=29-1783).
+React + TypeScript design system from the [Studio DS Figma file](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS).
 
-Tokens come from Figma collections **Studio · Semantic** (Light/Dark), **Studio · Typography** (Inter), **Studio · Primitives** (spacing, radius, icon, border, motion), and effect styles **Studio/Elevation/***.
+Tokens: **Studio · Semantic** (Light/Dark), **Studio · Typography**, **Studio · Primitives**, **Studio/Elevation/***.
 
 ## Install
 
@@ -11,7 +11,7 @@ npm install studio-ds
 ```
 
 ```tsx
-import { Button, Text, Stack } from "studio-ds";
+import { Button, Text, Stack, Icon } from "studio-ds";
 import "studio-ds/tokens.css";
 
 export function Example() {
@@ -19,7 +19,7 @@ export function Example() {
     <div className="sds-root" data-sds-theme="light">
       <Stack gap={16}>
         <Text variant="heading">Studio DS</Text>
-        <Button variant="primary">Continue</Button>
+        <Button icon={<Icon glyph="plus" />}>Create</Button>
       </Stack>
     </div>
   );
@@ -28,33 +28,20 @@ export function Example() {
 
 Peer dependencies: `react` and `react-dom` (^18 or ^19).
 
-Use `data-sds-theme="dark"` on a root element to switch semantic colors.
-
 ## Develop
 
 ```bash
 npm install
 npm run storybook   # http://127.0.0.1:44041
-npm run build       # ESM + types + tokens.css → dist/
+npm run build
 npm run lint
 ```
 
-`npm run dev` is an alias for Storybook on port **44041**.
+## Coverage
 
-## What’s included
+All Figma `Studio/*` component sets are exported with Storybook docs (core, forms, navigation, data, AI, role play, sections), plus foundations for variables / type styles / elevation.
 
-| Area | Contents |
-| ---- | -------- |
-| Tokens | Semantic color (light/dark), overlay/tooltip, Inter type scale, spacing, radii, icon sizes, border widths, motion, elevation shadows |
-| Foundations | `Text`, `Stack` |
-| Actions & feedback | `Button`, `IconButton`, `Alert`, `Badge`, `Avatar`, `Progress`, `Tooltip` |
-| Forms | `Input`, `Textarea`, `Select`, `SelectOptionItem`, `Search`, `NumberInput`, `Radio`, `Switch`, `Toggle` |
-| Navigation | `Tabs`/`Tab`, `Breadcrumbs`, `NavigationItem`, `StepperItem`, `PageHeading`, `PanelHeader`, `Dropdown`, `MenuItem` |
-| Data | `MetricCard` |
-| Utilities | `Link`, `Divider` (token-derived; no Figma component set) |
-| Docs | Storybook Overview, Foundations (variables / type / effects), per-component stories; Light/Dark toolbar |
-
-Domain AI / role-play / table composites and the Icon glyph library remain deferred — see the project plan inventory.
+Skipped only where Figma has no set: Checkbox, Modal/Dialog, Tag/Chip. See the project plan inventory for details.
 
 ## License
 
