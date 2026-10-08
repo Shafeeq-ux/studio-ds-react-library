@@ -4,19 +4,20 @@ import { Avatar } from "../components/Avatar";
 import { Badge } from "../components/Badge";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
+import { PageHeading } from "../components/PageHeading";
+import { Select } from "../components/Select";
 import { Stack } from "../components/Stack";
 import { Text } from "../components/Text";
+import { Toggle } from "../components/Toggle";
 
 function OverviewPage() {
   return (
-    <Stack gap={32} style={{ maxWidth: "40rem" }}>
-      <Stack gap={8}>
-        <Text variant="display">Studio DS</Text>
-        <Text tone="secondary">
-          Component library built on Studio · Semantic tokens. Foundations first,
-          then core UI documented in Storybook.
-        </Text>
-      </Stack>
+    <Stack gap={32} style={{ maxWidth: "42rem" }}>
+      <PageHeading
+        title="Studio DS"
+        description="Component library on Studio · Semantic tokens — foundations first, then core UI in Storybook."
+        action={<Button>Create role play</Button>}
+      />
 
       <Stack gap={16}>
         <Text variant="heading">Composition</Text>
@@ -32,6 +33,20 @@ function OverviewPage() {
         <Input
           label="Role play name *"
           defaultValue="Enterprise AI Objection Handling"
+        />
+        <Select
+          label="Product *"
+          helperText="The product sellers will position in this role play."
+          defaultValue="mindtickle"
+          options={[
+            { value: "mindtickle", label: "Mindtickle AI Revenue Platform" },
+            { value: "enablement", label: "Enablement Cloud" },
+          ]}
+        />
+        <Toggle
+          label="Challenge weak answers"
+          description="Ask for evidence when claims are vague."
+          defaultChecked
         />
         <Alert
           tone="ai"

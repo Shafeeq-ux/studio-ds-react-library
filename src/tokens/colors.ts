@@ -22,6 +22,8 @@ export const colors = {
   actionSubtle: "var(--sds-color-action-subtle)",
   actionBorder: "var(--sds-color-action-border)",
   focusRing: "var(--sds-color-focus-ring)",
+  controlThumb: "var(--sds-color-control-thumb)",
+  controlTrackOff: "var(--sds-color-control-track-off)",
   statusError: "var(--sds-color-status-error)",
   statusErrorSurface: "var(--sds-color-status-error-surface)",
   statusSuccess: "var(--sds-color-status-success)",

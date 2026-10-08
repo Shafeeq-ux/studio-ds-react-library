@@ -1,0 +1,65 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sds-space-8);
+  width: 100%;
+  min-width: 0;
+}
+
+.label {
+  margin: 0;
+  color: var(--sds-color-text-primary);
+  font-family: var(--sds-font-sans);
+  font-size: var(--sds-text-label);
+  font-weight: var(--sds-font-weight-semibold);
+  line-height: var(--sds-leading-label);
+}
+
+.field {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100px;
+  margin: 0;
+  padding: 12px;
+  border: 1px solid var(--sds-color-border-control);
+  border-radius: var(--sds-radius-6);
+  background: var(--sds-color-surface-default);
+  color: var(--sds-color-text-primary);
+  font-family: var(--sds-font-sans);
+  font-size: var(--sds-text-body);
+  font-weight: var(--sds-font-weight-regular);
+  line-height: 1.3125rem;
+  resize: vertical;
+  outline: none;
+  transition:
+    border-color var(--sds-motion-120) var(--sds-ease-out),
+    box-shadow var(--sds-motion-120) var(--sds-ease-out),
+    background-color var(--sds-motion-120) var(--sds-ease-out);
+}
+
+.field::placeholder {
+  color: var(--sds-color-text-tertiary);
+}
+
+.field:hover:not(:disabled):not(:focus) {
+  background: var(--sds-color-surface-hover);
+}
+
+.field:focus-visible {
+  border-color: var(--sds-color-focus-ring);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--sds-color-focus-ring) 28%, transparent);
+}
+
+.field:disabled {
+  background: var(--sds-color-surface-disabled);
+  color: var(--sds-color-text-tertiary);
+  cursor: not-allowed;
+}
+
+.helper {
+  margin: 0;
+  color: var(--sds-color-text-secondary);
+  font-family: var(--sds-font-sans);
+  font-size: var(--sds-text-caption);
+  line-height: var(--sds-leading-caption);
+}

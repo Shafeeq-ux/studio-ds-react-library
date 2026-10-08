@@ -32,6 +32,9 @@
 
   --sds-color-focus-ring: #2549be;
 
+  --sds-color-control-thumb: #ffffff;
+  --sds-color-control-track-off: #b0bac9;
+
   --sds-color-status-error: #b33434;
   --sds-color-status-error-surface: #fff1f1;
   --sds-color-status-success: #237348;
@@ -119,6 +122,9 @@
   --sds-color-action-border: #829ce6;
 
   --sds-color-focus-ring: #a6bbff;
+
+  --sds-color-control-thumb: #ffffff;
+  --sds-color-control-track-off: #69788e;
 
   --sds-color-status-error: #f2a1a1;
   --sds-color-status-error-surface: #3b252b;

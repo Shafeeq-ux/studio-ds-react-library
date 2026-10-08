@@ -1,0 +1,74 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sds-space-8);
+  min-height: var(--sds-target-44);
+  cursor: pointer;
+  user-select: none;
+}
+
+.root:has(.input:disabled) {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.labelText {
+  color: var(--sds-color-text-primary);
+  font-family: var(--sds-font-sans);
+  font-size: var(--sds-text-label);
+  font-weight: var(--sds-font-weight-semibold);
+  line-height: var(--sds-leading-label);
+}
+
+.control {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--sds-target-44);
+  height: var(--sds-target-44);
+  flex: 0 0 auto;
+}
+
+.input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 22px;
+  padding: 3px;
+  border-radius: 11px;
+  background: var(--sds-color-control-track-off);
+  transition: background-color var(--sds-motion-120) var(--sds-ease-out);
+  pointer-events: none;
+}
+
+.thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: var(--sds-radius-8);
+  background: var(--sds-color-control-thumb);
+  box-shadow: 0 1px 2px rgb(18 20 26 / 0.18);
+  transition: transform var(--sds-motion-160) var(--sds-ease-out);
+  transform: translateX(0);
+}
+
+.input:checked + .track {
+  background: var(--sds-color-action-primary);
+}
+
+.input:checked + .track .thumb {
+  transform: translateX(18px);
+}
+
+.input:focus-visible + .track {
+  outline: 2px solid var(--sds-color-focus-ring);
+  outline-offset: 2px;
+}

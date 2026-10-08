@@ -47,7 +47,7 @@ npm run lint
 | ---- | -------- |
 | Tokens | Semantic color (light/dark), Inter type scale, spacing 4–64, radii, motion |
 | Foundations | `Text`, `Stack` |
-| Core | `Button`, `Alert`, `Badge`, `Avatar`, `Input` |
+| Core | `Button`, `IconButton`, `Alert`, `Badge`, `Avatar`, `Input`, `Textarea`, `Select`, `Switch`, `Toggle`, `PageHeading` |
 | Docs | Storybook Overview, Foundations, and per-component stories; Light/Dark toolbar |
 
 ## Figma mapping
@@ -59,6 +59,10 @@ npm run lint
 | `font-size/*` | `--sds-text-*` / `Text` variants |
 | `spacing/*` | `--sds-space-*` / `Stack` `gap` |
 | `Studio/Button` Appearance Primary/Secondary | `Button` `variant` |
+| `Studio/Icon button` Surface/Quiet | `IconButton` |
+| `Studio/Switch` / `Studio/Toggle` | `Switch` / `Toggle` |
+| `Studio/Select` / `Studio/Textarea` | `Select` / `Textarea` |
+| `Studio/Page heading` | `PageHeading` |
 
 ## License
 
