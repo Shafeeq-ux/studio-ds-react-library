@@ -1,0 +1,39 @@
+.page {
+  max-width: 48rem;
+}
+
+.swatchGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+  gap: var(--sds-space-4);
+}
+
+.swatch {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sds-space-2);
+}
+
+.swatchChip {
+  height: 4.5rem;
+  border-radius: var(--sds-radius-md);
+  border: 1px solid var(--sds-color-border);
+  box-shadow: var(--sds-shadow-sm);
+}
+
+.spaceRow {
+  display: flex;
+  align-items: center;
+  gap: var(--sds-space-3);
+}
+
+.spaceLabel {
+  width: 5rem;
+  flex: 0 0 auto;
+}
+
+.spaceBar {
+  height: 0.75rem;
+  border-radius: var(--sds-radius-sm);
+  background: var(--sds-color-primary);
+}

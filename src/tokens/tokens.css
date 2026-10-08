@@ -1,0 +1,64 @@
+/**
+ * Studio DS design tokens as CSS custom properties.
+ *
+ * ASSUMPTION: Values are a coherent stand-in until the Figma file
+ * (Studio DS, node 29:1783) can be exported. Replace with sourced styles
+ * when Figma access is available.
+ */
+:root,
+.sds-root {
+  /* Color — ink / paper */
+  --sds-color-ink: #12141a;
+  --sds-color-ink-muted: #5c6170;
+  --sds-color-surface: #f7f6f3;
+  --sds-color-surface-raised: #ffffff;
+  --sds-color-border: #d9d6cf;
+  --sds-color-border-strong: #b8b3a8;
+
+  /* Color — brand & semantic */
+  --sds-color-primary: #0f6e6b;
+  --sds-color-primary-hover: #0c5a58;
+  --sds-color-primary-contrast: #ffffff;
+  --sds-color-danger: #b42318;
+  --sds-color-danger-hover: #912018;
+  --sds-color-danger-contrast: #ffffff;
+  --sds-color-focus-ring: #0f6e6b;
+
+  /* Typography */
+  --sds-font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  --sds-font-body: "Source Sans 3", "Source Sans Pro", "Segoe UI", sans-serif;
+  --sds-font-weight-regular: 400;
+  --sds-font-weight-medium: 500;
+  --sds-font-weight-semibold: 600;
+
+  --sds-text-xs: 0.75rem;
+  --sds-text-sm: 0.875rem;
+  --sds-text-md: 1rem;
+  --sds-text-lg: 1.25rem;
+  --sds-text-xl: 1.75rem;
+  --sds-text-2xl: 2.5rem;
+
+  --sds-leading-tight: 1.2;
+  --sds-leading-snug: 1.35;
+  --sds-leading-normal: 1.5;
+
+  /* Spacing (4px base) */
+  --sds-space-1: 0.25rem;
+  --sds-space-2: 0.5rem;
+  --sds-space-3: 0.75rem;
+  --sds-space-4: 1rem;
+  --sds-space-5: 1.5rem;
+  --sds-space-6: 2rem;
+  --sds-space-7: 3rem;
+
+  /* Radius & elevation */
+  --sds-radius-sm: 0.25rem;
+  --sds-radius-md: 0.5rem;
+  --sds-radius-lg: 0.75rem;
+  --sds-shadow-sm: 0 1px 2px rgb(18 20 26 / 0.06), 0 1px 3px rgb(18 20 26 / 0.08);
+
+  /* Motion */
+  --sds-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --sds-duration-fast: 140ms;
+  --sds-duration-normal: 220ms;
+}

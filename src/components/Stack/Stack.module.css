@@ -1,0 +1,9 @@
+.stack {
+  display: flex;
+  flex-direction: var(--sds-stack-direction, column);
+  flex-wrap: var(--sds-stack-wrap, nowrap);
+  align-items: var(--sds-stack-align, stretch);
+  justify-content: var(--sds-stack-justify, flex-start);
+  gap: var(--sds-stack-gap, var(--sds-space-3));
+  min-width: 0;
+}

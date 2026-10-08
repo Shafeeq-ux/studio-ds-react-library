@@ -1,0 +1,90 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sds-space-2);
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: var(--sds-radius-md);
+  font-family: var(--sds-font-body);
+  font-weight: var(--sds-font-weight-semibold);
+  line-height: var(--sds-leading-tight);
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color var(--sds-duration-fast) var(--sds-ease-out),
+    border-color var(--sds-duration-fast) var(--sds-ease-out),
+    color var(--sds-duration-fast) var(--sds-ease-out),
+    transform var(--sds-duration-fast) var(--sds-ease-out),
+    box-shadow var(--sds-duration-fast) var(--sds-ease-out);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--sds-color-focus-ring);
+  outline-offset: 2px;
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.sm {
+  min-height: 2rem;
+  padding: var(--sds-space-1) var(--sds-space-3);
+  font-size: var(--sds-text-sm);
+}
+
+.md {
+  min-height: 2.5rem;
+  padding: var(--sds-space-2) var(--sds-space-4);
+  font-size: var(--sds-text-md);
+}
+
+.lg {
+  min-height: 3rem;
+  padding: var(--sds-space-3) var(--sds-space-5);
+  font-size: var(--sds-text-lg);
+}
+
+.primary {
+  background: var(--sds-color-primary);
+  color: var(--sds-color-primary-contrast);
+}
+
+.primary:hover:not(:disabled) {
+  background: var(--sds-color-primary-hover);
+}
+
+.secondary {
+  background: var(--sds-color-surface-raised);
+  color: var(--sds-color-ink);
+  border-color: var(--sds-color-border-strong);
+  box-shadow: var(--sds-shadow-sm);
+}
+
+.secondary:hover:not(:disabled) {
+  border-color: var(--sds-color-ink-muted);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--sds-color-primary);
+}
+
+.ghost:hover:not(:disabled) {
+  background: rgb(15 110 107 / 0.08);
+}
+
+.danger {
+  background: var(--sds-color-danger);
+  color: var(--sds-color-danger-contrast);
+}
+
+.danger:hover:not(:disabled) {
+  background: var(--sds-color-danger-hover);
+}

@@ -1,0 +1,22 @@
+/**
+ * Minimal base styles for Storybook and host apps that opt in.
+ * Component look is driven by tokens + CSS Modules; this only sets
+ * sensible defaults on the document surface.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600&display=swap");
+
+.sds-root {
+  color: var(--sds-color-ink);
+  background: var(--sds-color-surface);
+  font-family: var(--sds-font-body);
+  font-size: var(--sds-text-md);
+  line-height: var(--sds-leading-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.sds-root *,
+.sds-root *::before,
+.sds-root *::after {
+  box-sizing: border-box;
+}
