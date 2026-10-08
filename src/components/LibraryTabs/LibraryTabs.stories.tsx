@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { LibraryTabs } from "./LibraryTabs";
 const meta = {
   title: "Components/LibraryTabs",

@@ -32,9 +32,20 @@ Peer dependencies: `react` and `react-dom` (^18 or ^19).
 
 ```bash
 npm install
-npm run storybook   # http://127.0.0.1:44041
+npm run storybook   # Storybook 10 · http://127.0.0.1:44041
 npm run build
 npm run lint
+```
+
+If the sidebar only shows a few components, you are likely on an older commit — pull `cursor/studio-ds-scaffold-160f` and reinstall:
+
+```bash
+git fetch origin
+git checkout cursor/studio-ds-scaffold-160f
+git pull origin cursor/studio-ds-scaffold-160f
+rm -rf node_modules
+npm install
+npm run storybook
 ```
 
 ## Coverage

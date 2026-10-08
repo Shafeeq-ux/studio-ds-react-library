@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { DifficultyGroup } from "./DifficultyGroup";
 const meta = {
   title: "Components/DifficultyGroup",

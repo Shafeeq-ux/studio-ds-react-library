@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { ScoreCard } from "./ScoreCard";
 const meta = {
   title: "Components/ScoreCard",

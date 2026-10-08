@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { ConversationStage } from "./ConversationStage";
 const meta = {
   title: "Components/ConversationStage",

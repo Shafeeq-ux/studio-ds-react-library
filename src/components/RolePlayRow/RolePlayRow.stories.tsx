@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { RolePlayRow } from "./RolePlayRow";
 import { Badge } from "../Badge";
 import { Dropdown } from "../Dropdown";

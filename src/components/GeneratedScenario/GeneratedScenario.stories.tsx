@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { GeneratedScenario } from "./GeneratedScenario";
 import { Button } from "../Button";
 

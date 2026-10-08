@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { AudienceOption } from "./AudienceOption";
 import { Stack } from "../Stack";
 const meta = {

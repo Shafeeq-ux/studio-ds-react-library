@@ -25,3 +25,4 @@ storybook-static
 
 # Temp
 node_modules/.tmp
+debug-storybook.log

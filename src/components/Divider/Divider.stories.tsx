@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Divider } from "./Divider";
 import { Stack } from "../Stack";
 import { Text } from "../Text";

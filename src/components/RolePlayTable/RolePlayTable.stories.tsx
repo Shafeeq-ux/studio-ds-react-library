@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { RolePlayTable } from "./RolePlayTable";
 import { TableHeader } from "../TableHeader";
 import { TableColumnHeading } from "../TableColumnHeading";

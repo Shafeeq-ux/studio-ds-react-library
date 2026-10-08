@@ -1,4 +1,4 @@
-import type { Preview } from "@storybook/react";
+import type { Preview } from "@storybook/react-vite";
 import "../src/tokens/tokens.css";
 import "../src/styles/base.css";
 
@@ -18,6 +18,7 @@ const preview: Preview = {
       },
     },
   },
+
   parameters: {
     layout: "centered",
     controls: {
@@ -27,14 +28,14 @@ const preview: Preview = {
       },
     },
     backgrounds: {
-      default: "canvas",
-      values: [
-        { name: "canvas", value: "#f5f6f8" },
-        { name: "surface", value: "#ffffff" },
-        { name: "dark-canvas", value: "#131923" },
-      ],
+      options: {
+        canvas: { name: "canvas", value: "#f5f6f8" },
+        surface: { name: "surface", value: "#ffffff" },
+        "dark-canvas": { name: "dark-canvas", value: "#131923" }
+      }
     },
   },
+
   decorators: [
     (Story, context) => {
       const theme = (context.globals.theme as string) || "light";
@@ -58,6 +59,12 @@ const preview: Preview = {
       );
     },
   ],
+
+  initialGlobals: {
+    backgrounds: {
+      value: "canvas"
+    }
+  }
 };
 
 export default preview;

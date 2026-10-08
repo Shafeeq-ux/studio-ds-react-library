@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Text } from "../components/Text";
 import { Stack } from "../components/Stack";
 import { colorValuesLight } from "../tokens";
