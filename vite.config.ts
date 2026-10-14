@@ -5,35 +5,41 @@ import { libInjectCss } from "vite-plugin-lib-inject-css";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 import { resolve } from "node:path";
 
+const isStorybook = Boolean(process.env.STORYBOOK);
+
 export default defineConfig({
-  plugins: [
-    react(),
-    libInjectCss(),
-    dts({
-      include: ["src"],
-      exclude: ["src/**/*.stories.tsx", "src/**/*.stories.ts"],
-      rollupTypes: true,
-      tsconfigPath: "./tsconfig.build.json",
-    }),
-    viteStaticCopy({
-      targets: [
-        {
-          src: "src/tokens/tokens.css",
-          dest: ".",
-          rename: "tokens.css",
-        },
+  plugins: isStorybook
+    ? [react()]
+    : [
+        react(),
+        libInjectCss(),
+        dts({
+          include: ["src"],
+          exclude: ["src/**/*.stories.tsx", "src/**/*.stories.ts"],
+          rollupTypes: true,
+          tsconfigPath: "./tsconfig.build.json",
+        }),
+        viteStaticCopy({
+          targets: [
+            {
+              src: "src/tokens/tokens.css",
+              dest: ".",
+              rename: "tokens.css",
+            },
+          ],
+        }),
       ],
-    }),
-  ],
-  build: {
-    lib: {
-      entry: resolve(__dirname, "src/index.ts"),
-      name: "StudioDS",
-      formats: ["es"],
-      fileName: "studio-ds",
-    },
-    rollupOptions: {
-      external: ["react", "react-dom", "react/jsx-runtime"],
-    },
-  },
+  build: isStorybook
+    ? {}
+    : {
+        lib: {
+          entry: resolve(__dirname, "src/index.ts"),
+          name: "StudioDS",
+          formats: ["es"],
+          fileName: "studio-ds",
+        },
+        rollupOptions: {
+          external: ["react", "react-dom", "react/jsx-runtime"],
+        },
+      },
 });

@@ -4,7 +4,7 @@ React + TypeScript design system from the [Studio DS Figma file](https://www.fig
 
 Tokens: **Studio · Semantic** (Light/Dark), **Studio · Typography**, **Studio · Primitives**, **Studio/Elevation/***.
 
-## Install
+## Install (library package)
 
 ```bash
 npm install studio-ds
@@ -32,12 +32,13 @@ Peer dependencies: `react` and `react-dom` (^18 or ^19).
 
 ```bash
 npm install
-npm run storybook   # Storybook 10 · http://127.0.0.1:44041
-npm run build
+npm run storybook        # Storybook 10 · http://127.0.0.1:44041
+npm run build            # library package → dist/
+npm run build-storybook  # static docs site → storybook-static/
 npm run lint
 ```
 
-If the sidebar only shows a few components, you are likely on an older commit — pull `cursor/studio-ds-scaffold-160f` and reinstall:
+If the sidebar only shows a few components, pull the latest branch and reinstall:
 
 ```bash
 git fetch origin
@@ -48,11 +49,58 @@ npm install
 npm run storybook
 ```
 
+## Deploy Storybook (static site)
+
+Static output folder: **`storybook-static/`** (gitignored — build on CI or locally).
+
+### Build command
+
+```bash
+npm ci
+npm run build-storybook
+```
+
+Produces `/storybook-static` with `index.html` — ready for any static host.
+
+### Netlify (connect repo)
+
+`netlify.toml` is already in the repo:
+
+| Setting | Value |
+| ------- | ----- |
+| Build command | `npm ci && npm run build-storybook` |
+| Publish directory | `storybook-static` |
+| Node | 22 |
+
+Connect the Git repo in Netlify → Deploy. No extra UI settings needed if `netlify.toml` is present.
+
+### Vercel (connect repo)
+
+`vercel.json` is already in the repo:
+
+| Setting | Value |
+| ------- | ----- |
+| Install command | `npm ci` |
+| Build command | `npm run build-storybook` |
+| Output directory | `storybook-static` |
+| Framework preset | Other (null) |
+
+Import the Git repo in Vercel → Deploy.
+
+### Drag-and-drop (no Git connect)
+
+1. Locally: `npm ci && npm run build-storybook`
+2. Upload the **`storybook-static`** folder:
+   - **Netlify** → Sites → Add new site → Deploy manually → drop `storybook-static`
+   - **Vercel** → Add New → Project → upload the `storybook-static` directory (or zip of its contents)
+
+Yes — drag-and-drop of `storybook-static` works as a finished static site (SPA rewrite not required for browsing Storybook’s hashed assets; Netlify/Vercel configs also include a fallback rewrite for deep links).
+
 ## Coverage
 
 All Figma `Studio/*` component sets are exported with Storybook docs (core, forms, navigation, data, AI, role play, sections), plus foundations for variables / type styles / elevation.
 
-Skipped only where Figma has no set: Checkbox, Modal/Dialog, Tag/Chip. See the project plan inventory for details.
+Skipped only where Figma has no set: Checkbox, Modal/Dialog, Tag/Chip.
 
 ## License
 
