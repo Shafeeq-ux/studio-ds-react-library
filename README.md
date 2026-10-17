@@ -62,6 +62,22 @@ npm run build-storybook
 
 Produces `/storybook-static` with `index.html` — ready for any static host.
 
+### GitHub Pages (this repo)
+
+CI workflow: [`.github/workflows/deploy-storybook-pages.yml`](.github/workflows/deploy-storybook-pages.yml).
+
+1. Push to `main` (or run **Actions → Deploy Storybook to GitHub Pages → Run workflow**).
+2. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+3. Site URL after the first green deploy:
+
+   **https://shafeeq-ux.github.io/studio-ds-react-library/**
+
+Local build with the same base path:
+
+```bash
+STORYBOOK_BASE_PATH=/studio-ds-react-library/ npm run build-storybook
+```
+
 ### Netlify (connect repo)
 
 `netlify.toml` is already in the repo:
