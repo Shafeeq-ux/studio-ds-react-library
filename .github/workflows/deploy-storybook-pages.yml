@@ -36,6 +36,9 @@ jobs:
           # Project site: https://<user>.github.io/<repo>/
           STORYBOOK_BASE_PATH: /studio-ds-react-library/
 
+      - name: Ensure .nojekyll
+        run: touch storybook-static/.nojekyll
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
