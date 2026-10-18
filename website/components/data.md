@@ -6,23 +6,25 @@ title: Data
 
 Tables, scores, metrics, and library chrome.
 
+Each component below has **detailed documentation on this site** (usage, API, anatomy). External links open Figma, Storybook, and source.
+
 <ResourceLinks />
 
-| Component | Status | GitHub | Figma | Storybook |
-| --- | --- | --- | --- | --- |
-| **LibraryCard** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/LibraryCard) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-data-librarycard--docs) |
-| **LibraryToolbar** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/LibraryToolbar) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-data-librarytoolbar--docs) |
-| **MetricCard** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/MetricCard) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-data-metriccard--docs) |
-| **Progress** | <StatusPill status="stable" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/Progress) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-data-progress--docs) |
-| **RolePlayRow** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/RolePlayRow) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-data-roleplayrow--docs) |
-| **RolePlayTable** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/RolePlayTable) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-data-roleplaytable--docs) |
-| **Score** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/Score) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-data-score--docs) |
-| **ScoreCard** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/ScoreCard) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-data-scorecard--docs) |
-| **SellerRow** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/SellerRow) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-data-sellerrow--docs) |
-| **SellerTable** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/SellerTable) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-data-sellertable--docs) |
-| **TableColumnHeading** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/TableColumnHeading) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-data-tablecolumnheading--docs) |
-| **TableHeader** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/TableHeader) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-data-tableheader--docs) |
+| Component | Status | Guidelines | Storybook |
+| --- | --- | --- | --- |
+| [LibraryCard](/components/data/library-card) | <StatusPill status="beta" /> | [Docs](/components/data/library-card) | [Storybook](/storybook/?path=/docs/components-data-librarycard--docs) |
+| [LibraryToolbar](/components/data/library-toolbar) | <StatusPill status="beta" /> | [Docs](/components/data/library-toolbar) | [Storybook](/storybook/?path=/docs/components-data-librarytoolbar--docs) |
+| [MetricCard](/components/data/metric-card) | <StatusPill status="beta" /> | [Docs](/components/data/metric-card) | [Storybook](/storybook/?path=/docs/components-data-metriccard--docs) |
+| [Progress](/components/data/progress) | <StatusPill status="stable" /> | [Docs](/components/data/progress) | [Storybook](/storybook/?path=/docs/components-data-progress--docs) |
+| [RolePlayRow](/components/data/role-play-row) | <StatusPill status="beta" /> | [Docs](/components/data/role-play-row) | [Storybook](/storybook/?path=/docs/components-data-roleplayrow--docs) |
+| [RolePlayTable](/components/data/role-play-table) | <StatusPill status="beta" /> | [Docs](/components/data/role-play-table) | [Storybook](/storybook/?path=/docs/components-data-roleplaytable--docs) |
+| [Score](/components/data/score) | <StatusPill status="beta" /> | [Docs](/components/data/score) | [Storybook](/storybook/?path=/docs/components-data-score--docs) |
+| [ScoreCard](/components/data/score-card) | <StatusPill status="beta" /> | [Docs](/components/data/score-card) | [Storybook](/storybook/?path=/docs/components-data-scorecard--docs) |
+| [SellerRow](/components/data/seller-row) | <StatusPill status="beta" /> | [Docs](/components/data/seller-row) | [Storybook](/storybook/?path=/docs/components-data-sellerrow--docs) |
+| [SellerTable](/components/data/seller-table) | <StatusPill status="beta" /> | [Docs](/components/data/seller-table) | [Storybook](/storybook/?path=/docs/components-data-sellertable--docs) |
+| [TableColumnHeading](/components/data/table-column-heading) | <StatusPill status="beta" /> | [Docs](/components/data/table-column-heading) | [Storybook](/storybook/?path=/docs/components-data-tablecolumnheading--docs) |
+| [TableHeader](/components/data/table-header) | <StatusPill status="beta" /> | [Docs](/components/data/table-header) | [Storybook](/storybook/?path=/docs/components-data-tableheader--docs) |
 
 ::: tip
-Open **Storybook → Docs** for live examples and the full props API. Use **Canvas** for Controls.
+Open a component page for props tables and code samples. Use Storybook when you need live Controls.
 :::

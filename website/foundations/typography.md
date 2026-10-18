@@ -4,7 +4,7 @@ title: Typography
 
 # Typography
 
-Typography supports hierarchy of information. Studio DS uses **Inter** (Regular 400 / Semi Bold 600).
+Typography supports hierarchy of information. Studio DS uses **Inter** (Regular 400 / Semi Bold 600). Full guidance lives on this page; Storybook shows live specimens.
 
 <ResourceLinks />
 
@@ -30,4 +30,9 @@ import { Text } from "studio-ds";
 <Text tone="secondary">Secondary supporting copy</Text>
 ```
 
-See specimens in [Storybook Foundations](/storybook/?path=/docs/foundations-tokens--overview).
+## External references
+
+- [Figma · Typography](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS)
+- [Storybook Foundations](/storybook/?path=/docs/foundations-tokens--overview)
+- [Text component docs](/components/core/text)
+- [Text.tsx](https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/Text/Text.tsx) · [typography.ts](https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/tokens/typography.ts)

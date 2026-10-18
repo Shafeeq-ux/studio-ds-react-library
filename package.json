@@ -29,8 +29,9 @@
     "lint": "oxlint src",
     "storybook": "storybook dev -p 44041 --no-open",
     "build-storybook": "storybook build -o storybook-static",
-    "docs:dev": "vitepress dev website --port 44142 --host 127.0.0.1",
-    "docs:build": "vitepress build website",
+    "docs:gen": "node scripts/generate-docs-site.mjs",
+    "docs:dev": "npm run docs:gen && vitepress dev website --port 44142 --host 127.0.0.1",
+    "docs:build": "npm run docs:gen && vitepress build website",
     "build-site": "npm run docs:build && STORYBOOK_BASE_PATH=/studio-ds-react-library/storybook/ storybook build -o site-dist/storybook && touch site-dist/.nojekyll site-dist/storybook/.nojekyll"
   },
   "peerDependencies": {

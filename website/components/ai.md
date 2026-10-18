@@ -6,19 +6,21 @@ title: AI
 
 Presentational shells for generation and coaching — host apps supply state.
 
+Each component below has **detailed documentation on this site** (usage, API, anatomy). External links open Figma, Storybook, and source.
+
 <ResourceLinks />
 
-| Component | Status | GitHub | Figma | Storybook |
-| --- | --- | --- | --- | --- |
-| **AICoach** | <StatusPill status="draft" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/AICoach) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-ai-aicoach--docs) |
-| **EvaluationSuggestions** | <StatusPill status="draft" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/EvaluationSuggestions) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-ai-evaluationsuggestions--docs) |
-| **GeneratedScenario** | <StatusPill status="draft" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/GeneratedScenario) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-ai-generatedscenario--docs) |
-| **GenerationProgress** | <StatusPill status="draft" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/GenerationProgress) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-ai-generationprogress--docs) |
-| **GenerationStatus** | <StatusPill status="draft" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/GenerationStatus) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-ai-generationstatus--docs) |
-| **PromptComposer** | <StatusPill status="draft" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/PromptComposer) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-ai-promptcomposer--docs) |
-| **ReadinessCheck** | <StatusPill status="draft" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/ReadinessCheck) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-ai-readinesscheck--docs) |
-| **ScenarioSkeleton** | <StatusPill status="draft" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/ScenarioSkeleton) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-ai-scenarioskeleton--docs) |
+| Component | Status | Guidelines | Storybook |
+| --- | --- | --- | --- |
+| [AICoach](/components/ai/aicoach) | <StatusPill status="draft" /> | [Docs](/components/ai/aicoach) | [Storybook](/storybook/?path=/docs/components-ai-aicoach--docs) |
+| [EvaluationSuggestions](/components/ai/evaluation-suggestions) | <StatusPill status="draft" /> | [Docs](/components/ai/evaluation-suggestions) | [Storybook](/storybook/?path=/docs/components-ai-evaluationsuggestions--docs) |
+| [GeneratedScenario](/components/ai/generated-scenario) | <StatusPill status="draft" /> | [Docs](/components/ai/generated-scenario) | [Storybook](/storybook/?path=/docs/components-ai-generatedscenario--docs) |
+| [GenerationProgress](/components/ai/generation-progress) | <StatusPill status="draft" /> | [Docs](/components/ai/generation-progress) | [Storybook](/storybook/?path=/docs/components-ai-generationprogress--docs) |
+| [GenerationStatus](/components/ai/generation-status) | <StatusPill status="draft" /> | [Docs](/components/ai/generation-status) | [Storybook](/storybook/?path=/docs/components-ai-generationstatus--docs) |
+| [PromptComposer](/components/ai/prompt-composer) | <StatusPill status="draft" /> | [Docs](/components/ai/prompt-composer) | [Storybook](/storybook/?path=/docs/components-ai-promptcomposer--docs) |
+| [ReadinessCheck](/components/ai/readiness-check) | <StatusPill status="draft" /> | [Docs](/components/ai/readiness-check) | [Storybook](/storybook/?path=/docs/components-ai-readinesscheck--docs) |
+| [ScenarioSkeleton](/components/ai/scenario-skeleton) | <StatusPill status="draft" /> | [Docs](/components/ai/scenario-skeleton) | [Storybook](/storybook/?path=/docs/components-ai-scenarioskeleton--docs) |
 
 ::: tip
-Open **Storybook → Docs** for live examples and the full props API. Use **Canvas** for Controls.
+Open a component page for props tables and code samples. Use Storybook when you need live Controls.
 :::

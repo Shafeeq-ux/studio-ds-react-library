@@ -13,7 +13,13 @@ Hosted on GitHub Pages:
 | **Guidelines site** (VitePress) | https://shafeeq-ux.github.io/studio-ds-react-library/ |
 | **Storybook playground** | https://shafeeq-ux.github.io/studio-ds-react-library/storybook/ |
 
-Guidelines IA mirrors [mews.design](https://www.mews.design/latest/welcome-eumfLxWD): Welcome · Get started (Design / Engineering) · Foundations · Components (status + groups) · Resources — with **GitHub · Figma · Storybook** links on every page. Flutter is out of scope.
+Guidelines IA mirrors [mews.design](https://www.mews.design/latest/welcome-eumfLxWD): Welcome · Get started · Foundations · **detailed docs for every component on this site** · Resources. Each component page includes usage, API, anatomy, plus external links to **Figma · Storybook · React+TS · CSS**. Flutter is out of scope.
+
+Regenerate component pages from source anytime:
+
+```bash
+npm run docs:gen
+```
 
 ## Install (library package)
 

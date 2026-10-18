@@ -1,0 +1,415 @@
+{
+  "/components/": [
+    {
+      "text": "Components",
+      "items": [
+        {
+          "text": "Overview",
+          "link": "/components/"
+        },
+        {
+          "text": "Status board",
+          "link": "/components/status"
+        }
+      ]
+    },
+    {
+      "text": "Core",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "Core overview",
+          "link": "/components/core"
+        },
+        {
+          "text": "Alert",
+          "link": "/components/core/alert"
+        },
+        {
+          "text": "Avatar",
+          "link": "/components/core/avatar"
+        },
+        {
+          "text": "Badge",
+          "link": "/components/core/badge"
+        },
+        {
+          "text": "Button",
+          "link": "/components/core/button"
+        },
+        {
+          "text": "Divider",
+          "link": "/components/core/divider"
+        },
+        {
+          "text": "Dropdown",
+          "link": "/components/core/dropdown"
+        },
+        {
+          "text": "Icon",
+          "link": "/components/core/icon"
+        },
+        {
+          "text": "IconButton",
+          "link": "/components/core/icon-button"
+        },
+        {
+          "text": "Link",
+          "link": "/components/core/link"
+        },
+        {
+          "text": "MenuItem",
+          "link": "/components/core/menu-item"
+        },
+        {
+          "text": "PageHeading",
+          "link": "/components/core/page-heading"
+        },
+        {
+          "text": "PanelHeader",
+          "link": "/components/core/panel-header"
+        },
+        {
+          "text": "Stack",
+          "link": "/components/core/stack"
+        },
+        {
+          "text": "Text",
+          "link": "/components/core/text"
+        },
+        {
+          "text": "Tooltip",
+          "link": "/components/core/tooltip"
+        }
+      ]
+    },
+    {
+      "text": "Forms",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Forms overview",
+          "link": "/components/forms"
+        },
+        {
+          "text": "AudienceOption",
+          "link": "/components/forms/audience-option"
+        },
+        {
+          "text": "DifficultyGroup",
+          "link": "/components/forms/difficulty-group"
+        },
+        {
+          "text": "Input",
+          "link": "/components/forms/input"
+        },
+        {
+          "text": "NumberInput",
+          "link": "/components/forms/number-input"
+        },
+        {
+          "text": "Radio",
+          "link": "/components/forms/radio"
+        },
+        {
+          "text": "Search",
+          "link": "/components/forms/search"
+        },
+        {
+          "text": "Select",
+          "link": "/components/forms/select"
+        },
+        {
+          "text": "SelectMenu",
+          "link": "/components/forms/select-menu"
+        },
+        {
+          "text": "SelectOption",
+          "link": "/components/forms/select-option"
+        },
+        {
+          "text": "Switch",
+          "link": "/components/forms/switch"
+        },
+        {
+          "text": "Textarea",
+          "link": "/components/forms/textarea"
+        },
+        {
+          "text": "Toggle",
+          "link": "/components/forms/toggle"
+        }
+      ]
+    },
+    {
+      "text": "Navigation",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Navigation overview",
+          "link": "/components/navigation"
+        },
+        {
+          "text": "ApplicationSidebar",
+          "link": "/components/navigation/application-sidebar"
+        },
+        {
+          "text": "AuthoringStepper",
+          "link": "/components/navigation/authoring-stepper"
+        },
+        {
+          "text": "Breadcrumbs",
+          "link": "/components/navigation/breadcrumbs"
+        },
+        {
+          "text": "LibraryTabs",
+          "link": "/components/navigation/library-tabs"
+        },
+        {
+          "text": "NavigationItem",
+          "link": "/components/navigation/navigation-item"
+        },
+        {
+          "text": "Pagination",
+          "link": "/components/navigation/pagination"
+        },
+        {
+          "text": "StepperItem",
+          "link": "/components/navigation/stepper-item"
+        },
+        {
+          "text": "StickyAuthoringActions",
+          "link": "/components/navigation/sticky-authoring-actions"
+        },
+        {
+          "text": "Tabs",
+          "link": "/components/navigation/tabs"
+        },
+        {
+          "text": "TopNavigation",
+          "link": "/components/navigation/top-navigation"
+        }
+      ]
+    },
+    {
+      "text": "Data",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Data overview",
+          "link": "/components/data"
+        },
+        {
+          "text": "LibraryCard",
+          "link": "/components/data/library-card"
+        },
+        {
+          "text": "LibraryToolbar",
+          "link": "/components/data/library-toolbar"
+        },
+        {
+          "text": "MetricCard",
+          "link": "/components/data/metric-card"
+        },
+        {
+          "text": "Progress",
+          "link": "/components/data/progress"
+        },
+        {
+          "text": "RolePlayRow",
+          "link": "/components/data/role-play-row"
+        },
+        {
+          "text": "RolePlayTable",
+          "link": "/components/data/role-play-table"
+        },
+        {
+          "text": "Score",
+          "link": "/components/data/score"
+        },
+        {
+          "text": "ScoreCard",
+          "link": "/components/data/score-card"
+        },
+        {
+          "text": "SellerRow",
+          "link": "/components/data/seller-row"
+        },
+        {
+          "text": "SellerTable",
+          "link": "/components/data/seller-table"
+        },
+        {
+          "text": "TableColumnHeading",
+          "link": "/components/data/table-column-heading"
+        },
+        {
+          "text": "TableHeader",
+          "link": "/components/data/table-header"
+        }
+      ]
+    },
+    {
+      "text": "AI",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "AI overview",
+          "link": "/components/ai"
+        },
+        {
+          "text": "AICoach",
+          "link": "/components/ai/aicoach"
+        },
+        {
+          "text": "EvaluationSuggestions",
+          "link": "/components/ai/evaluation-suggestions"
+        },
+        {
+          "text": "GeneratedScenario",
+          "link": "/components/ai/generated-scenario"
+        },
+        {
+          "text": "GenerationProgress",
+          "link": "/components/ai/generation-progress"
+        },
+        {
+          "text": "GenerationStatus",
+          "link": "/components/ai/generation-status"
+        },
+        {
+          "text": "PromptComposer",
+          "link": "/components/ai/prompt-composer"
+        },
+        {
+          "text": "ReadinessCheck",
+          "link": "/components/ai/readiness-check"
+        },
+        {
+          "text": "ScenarioSkeleton",
+          "link": "/components/ai/scenario-skeleton"
+        }
+      ]
+    },
+    {
+      "text": "Role play",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Role play overview",
+          "link": "/components/role-play"
+        },
+        {
+          "text": "AudioPlayer",
+          "link": "/components/role-play/audio-player"
+        },
+        {
+          "text": "BuyerIdentity",
+          "link": "/components/role-play/buyer-identity"
+        },
+        {
+          "text": "ConversationBubble",
+          "link": "/components/role-play/conversation-bubble"
+        },
+        {
+          "text": "ConversationStage",
+          "link": "/components/role-play/conversation-stage"
+        },
+        {
+          "text": "ConversationTimeline",
+          "link": "/components/role-play/conversation-timeline"
+        },
+        {
+          "text": "EvaluationCriterion",
+          "link": "/components/role-play/evaluation-criterion"
+        },
+        {
+          "text": "ReviewSummary",
+          "link": "/components/role-play/review-summary"
+        },
+        {
+          "text": "SessionBuyer",
+          "link": "/components/role-play/session-buyer"
+        },
+        {
+          "text": "SessionBuyerHeader",
+          "link": "/components/role-play/session-buyer-header"
+        }
+      ]
+    },
+    {
+      "text": "Sections",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Sections overview",
+          "link": "/components/sections"
+        },
+        {
+          "text": "SectionAIBehavior",
+          "link": "/components/sections/section-aibehavior"
+        },
+        {
+          "text": "SectionAvailability",
+          "link": "/components/sections/section-availability"
+        },
+        {
+          "text": "SectionBuyerPersona",
+          "link": "/components/sections/section-buyer-persona"
+        },
+        {
+          "text": "SectionConversation",
+          "link": "/components/sections/section-conversation"
+        },
+        {
+          "text": "SectionConversationLength",
+          "link": "/components/sections/section-conversation-length"
+        },
+        {
+          "text": "SectionConversationSettings",
+          "link": "/components/sections/section-conversation-settings"
+        },
+        {
+          "text": "SectionEvaluationCriteria",
+          "link": "/components/sections/section-evaluation-criteria"
+        },
+        {
+          "text": "SectionGenerationContext",
+          "link": "/components/sections/section-generation-context"
+        },
+        {
+          "text": "SectionPublishingDetails",
+          "link": "/components/sections/section-publishing-details"
+        },
+        {
+          "text": "SectionScenarioDetails",
+          "link": "/components/sections/section-scenario-details"
+        },
+        {
+          "text": "SectionScoreDistribution",
+          "link": "/components/sections/section-score-distribution"
+        },
+        {
+          "text": "SectionSellerPerformance",
+          "link": "/components/sections/section-seller-performance"
+        },
+        {
+          "text": "SectionSession",
+          "link": "/components/sections/section-session"
+        },
+        {
+          "text": "SectionSkillScoreBreakdown",
+          "link": "/components/sections/section-skill-score-breakdown"
+        },
+        {
+          "text": "SectionTopSkillGaps",
+          "link": "/components/sections/section-top-skill-gaps"
+        },
+        {
+          "text": "SectionVoice",
+          "link": "/components/sections/section-voice"
+        }
+      ]
+    }
+  ]
+}

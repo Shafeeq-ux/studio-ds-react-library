@@ -1,11 +1,19 @@
 import { defineConfig } from "vitepress";
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
 
+const __dirname = dirname(fileURLToPath(import.meta.url));
 const BASE = "/studio-ds-react-library/";
-/** Site-relative path — VitePress applies `base` itself; do not prefix BASE here. */
+/** Site-relative — VitePress applies `base` itself. */
 const STORYBOOK = "/storybook/";
 const GITHUB = "https://github.com/Shafeeq-ux/studio-ds-react-library";
 const FIGMA =
   "https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS";
+
+const generatedSidebar = JSON.parse(
+  readFileSync(join(__dirname, "sidebar.gen.json"), "utf8"),
+);
 
 export default defineConfig({
   title: "Studio DS",
@@ -36,9 +44,7 @@ export default defineConfig({
         ],
       },
     ],
-    socialLinks: [
-      { icon: "github", link: GITHUB },
-    ],
+    socialLinks: [{ icon: "github", link: GITHUB }],
     sidebar: {
       "/get-started/": [
         {
@@ -66,22 +72,7 @@ export default defineConfig({
           ],
         },
       ],
-      "/components/": [
-        {
-          text: "Components",
-          items: [
-            { text: "Overview", link: "/components/" },
-            { text: "Status board", link: "/components/status" },
-            { text: "Core", link: "/components/core" },
-            { text: "Forms", link: "/components/forms" },
-            { text: "Navigation", link: "/components/navigation" },
-            { text: "Data", link: "/components/data" },
-            { text: "AI", link: "/components/ai" },
-            { text: "Role play", link: "/components/role-play" },
-            { text: "Sections", link: "/components/sections" },
-          ],
-        },
-      ],
+      ...generatedSidebar,
       "/resources/": [
         {
           text: "Resources",

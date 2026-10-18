@@ -6,21 +6,23 @@ title: Navigation
 
 Wayfinding, steppers, sidebars, and pagination.
 
+Each component below has **detailed documentation on this site** (usage, API, anatomy). External links open Figma, Storybook, and source.
+
 <ResourceLinks />
 
-| Component | Status | GitHub | Figma | Storybook |
-| --- | --- | --- | --- | --- |
-| **ApplicationSidebar** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/ApplicationSidebar) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-navigation-applicationsidebar--docs) |
-| **AuthoringStepper** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/AuthoringStepper) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-navigation-authoringstepper--docs) |
-| **Breadcrumbs** | <StatusPill status="stable" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/Breadcrumbs) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-navigation-breadcrumbs--docs) |
-| **LibraryTabs** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/LibraryTabs) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-navigation-librarytabs--docs) |
-| **NavigationItem** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/NavigationItem) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-navigation-navigationitem--docs) |
-| **Pagination** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/Pagination) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-navigation-pagination--docs) |
-| **StepperItem** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/StepperItem) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-navigation-stepperitem--docs) |
-| **StickyAuthoringActions** | <StatusPill status="draft" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/StickyAuthoringActions) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-navigation-stickyauthoringactions--docs) |
-| **Tabs** | <StatusPill status="stable" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/Tabs) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-navigation-tabs--docs) |
-| **TopNavigation** | <StatusPill status="beta" /> | [Source](https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main/src/components/TopNavigation) | [Open](https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS) | [Docs](/storybook/?path=/docs/components-navigation-topnavigation--docs) |
+| Component | Status | Guidelines | Storybook |
+| --- | --- | --- | --- |
+| [ApplicationSidebar](/components/navigation/application-sidebar) | <StatusPill status="beta" /> | [Docs](/components/navigation/application-sidebar) | [Storybook](/storybook/?path=/docs/components-navigation-applicationsidebar--docs) |
+| [AuthoringStepper](/components/navigation/authoring-stepper) | <StatusPill status="beta" /> | [Docs](/components/navigation/authoring-stepper) | [Storybook](/storybook/?path=/docs/components-navigation-authoringstepper--docs) |
+| [Breadcrumbs](/components/navigation/breadcrumbs) | <StatusPill status="stable" /> | [Docs](/components/navigation/breadcrumbs) | [Storybook](/storybook/?path=/docs/components-navigation-breadcrumbs--docs) |
+| [LibraryTabs](/components/navigation/library-tabs) | <StatusPill status="beta" /> | [Docs](/components/navigation/library-tabs) | [Storybook](/storybook/?path=/docs/components-navigation-librarytabs--docs) |
+| [NavigationItem](/components/navigation/navigation-item) | <StatusPill status="beta" /> | [Docs](/components/navigation/navigation-item) | [Storybook](/storybook/?path=/docs/components-navigation-navigationitem--docs) |
+| [Pagination](/components/navigation/pagination) | <StatusPill status="beta" /> | [Docs](/components/navigation/pagination) | [Storybook](/storybook/?path=/docs/components-navigation-pagination--docs) |
+| [StepperItem](/components/navigation/stepper-item) | <StatusPill status="beta" /> | [Docs](/components/navigation/stepper-item) | [Storybook](/storybook/?path=/docs/components-navigation-stepperitem--docs) |
+| [StickyAuthoringActions](/components/navigation/sticky-authoring-actions) | <StatusPill status="draft" /> | [Docs](/components/navigation/sticky-authoring-actions) | [Storybook](/storybook/?path=/docs/components-navigation-stickyauthoringactions--docs) |
+| [Tabs](/components/navigation/tabs) | <StatusPill status="stable" /> | [Docs](/components/navigation/tabs) | [Storybook](/storybook/?path=/docs/components-navigation-tabs--docs) |
+| [TopNavigation](/components/navigation/top-navigation) | <StatusPill status="beta" /> | [Docs](/components/navigation/top-navigation) | [Storybook](/storybook/?path=/docs/components-navigation-topnavigation--docs) |
 
 ::: tip
-Open **Storybook → Docs** for live examples and the full props API. Use **Canvas** for Controls.
+Open a component page for props tables and code samples. Use Storybook when you need live Controls.
 :::
