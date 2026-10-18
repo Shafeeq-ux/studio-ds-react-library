@@ -9,9 +9,13 @@ description: Studio DS Badge — React + TypeScript documentation
 
 Maps to Figma Studio/Badge Tone.
 
-This page documents **Badge** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **Badge** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 <ComponentResources name="Badge" figma="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS" storybook="/storybook/?path=/docs/components-core-badge--docs" react="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/Badge/Badge.tsx" css="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/Badge/Badge.module.css" />
+
+## Interactive preview
+
+<StoryPreview id="components-core-badge--positive" title="Badge · live story" height="280px" />
 
 ## When to use
 

@@ -9,9 +9,13 @@ description: Studio DS StepperItem — React + TypeScript documentation
 
 Maps to Figma Studio/Stepper item State.
 
-This page documents **StepperItem** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **StepperItem** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 <ComponentResources name="StepperItem" figma="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS" storybook="/storybook/?path=/docs/components-navigation-stepperitem--docs" react="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/StepperItem/StepperItem.tsx" css="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/StepperItem/StepperItem.module.css" />
+
+## Interactive preview
+
+<StoryPreview id="components-navigation-stepperitem--current" title="StepperItem · live story" height="360px" />
 
 ## When to use
 

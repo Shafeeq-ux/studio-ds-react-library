@@ -9,9 +9,13 @@ description: Studio DS TopNavigation — React + TypeScript documentation
 
 React + TypeScript implementation of Studio DS **TopNavigation**.
 
-This page documents **TopNavigation** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **TopNavigation** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 <ComponentResources name="TopNavigation" figma="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS" storybook="/storybook/?path=/docs/components-navigation-topnavigation--docs" react="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/TopNavigation/TopNavigation.tsx" css="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/TopNavigation/TopNavigation.module.css" />
+
+## Interactive preview
+
+<StoryPreview id="components-navigation-topnavigation--default" title="TopNavigation · live story" height="360px" />
 
 ## When to use
 

@@ -4,13 +4,13 @@ title: Foundations overview
 
 # Foundations
 
-These interlocking design elements lay the foundation for everything in Studio DS.
+These interlocking design elements lay the foundation for everything in Studio DS. Details live on this site; Storybook provides live specimens.
 
 <ResourceLinks />
 
-## Introduction
+## Interactive reference
 
-Foundations provide consistency and visual harmony across products. Explore typography, color, spacing, elevation, and iconography — then inspect live specimens in [Storybook Foundations → Tokens](/storybook/?path=/docs/foundations-tokens--overview).
+<StoryPreview id="foundations-tokens--overview" title="Foundations · Tokens (live)" height="520px" />
 
 <div class="sds-card-grid">
   <a class="sds-card" href="./color"><h3>Color</h3><p>Semantic surfaces, text, action, status, and AI roles.</p></a>

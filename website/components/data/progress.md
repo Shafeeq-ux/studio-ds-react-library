@@ -9,9 +9,13 @@ description: Studio DS Progress — React + TypeScript documentation
 
 React + TypeScript implementation of Studio DS **Progress**.
 
-This page documents **Progress** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **Progress** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 <ComponentResources name="Progress" figma="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS" storybook="/storybook/?path=/docs/components-data-progress--docs" react="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/Progress/Progress.tsx" css="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/Progress/Progress.module.css" />
+
+## Interactive preview
+
+<StoryPreview id="components-data-progress--determinate" title="Progress · live story" height="360px" />
 
 ## When to use
 

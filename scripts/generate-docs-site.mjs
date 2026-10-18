@@ -204,6 +204,28 @@ function storyDocsId(group, name) {
   return `components-${g}-${name.toLowerCase()}--docs`;
 }
 
+function storyIdBase(group, name) {
+  const g = group.toLowerCase().replace(/\s+/g, "-");
+  return `components-${g}-${name.toLowerCase()}`;
+}
+
+/** First Canvas story id from *.stories.tsx (skips docs-only). */
+function firstStoryId(group, name) {
+  const storiesPath = path.join(COMP_ROOT, name, `${name}.stories.tsx`);
+  const base = storyIdBase(group, name);
+  if (!fs.existsSync(storiesPath)) return `${base}--docs`;
+  const src = fs.readFileSync(storiesPath, "utf8");
+  const exports = [...src.matchAll(/export const ([A-Za-z0-9_]+)\s*[:=]/g)]
+    .map((m) => m[1])
+    .filter((n) => !["default", "meta"].includes(n));
+  const storyExport = exports[0] || "Default";
+  const storyKebab = storyExport
+    .replace(/([a-z0-9])([A-Z])/g, "$1-$2")
+    .replace(/_/g, "-")
+    .toLowerCase();
+  return `${base}--${storyKebab}`;
+}
+
 function extractProps(source, componentName) {
   const propsType = `${componentName}Props`;
   const typeRe = new RegExp(
@@ -344,6 +366,7 @@ function writeComponentPage(meta) {
   fs.mkdirSync(dir, { recursive: true });
 
   const storyUrl = `/storybook/?path=/docs/${storyDocsId(group, name)}`;
+  const previewId = firstStoryId(group, name);
   const reactUrl = `${GH}/src/components/${name}/${name}.tsx`;
   const cssUrl = hasCss
     ? `${GH}/src/components/${name}/${name}.module.css`
@@ -362,6 +385,13 @@ function writeComponentPage(meta) {
           }),
         ].join("\n");
 
+  const previewHeight =
+    group === "Sections" || group === "Role play" || group === "AI"
+      ? "420px"
+      : group === "Data" || group === "Navigation"
+        ? "360px"
+        : "280px";
+
   const md = `---
 title: ${name}
 description: Studio DS ${name} — React + TypeScript documentation
@@ -373,13 +403,17 @@ description: Studio DS ${name} — React + TypeScript documentation
 
 ${summary}
 
-This page documents **${name}** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **${name}** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 ${
     hasCss
       ? `<ComponentResources name="${name}" figma="${FIGMA}" storybook="${storyUrl}" react="${reactUrl}" css="${cssUrl}" />`
       : `<ComponentResources name="${name}" figma="${FIGMA}" storybook="${storyUrl}" react="${reactUrl}" />`
   }
+
+## Interactive preview
+
+<StoryPreview id="${previewId}" title="${name} · live story" height="${previewHeight}" />
 
 ## When to use
 
@@ -564,6 +598,33 @@ function writeSidebar(byGroup) {
 }
 
 function enhanceFoundations() {
+  fs.writeFileSync(
+    path.join(WEB, "foundations/index.md"),
+    `---
+title: Foundations overview
+---
+
+# Foundations
+
+These interlocking design elements lay the foundation for everything in Studio DS. Details live on this site; Storybook provides live specimens.
+
+<ResourceLinks />
+
+## Interactive reference
+
+<StoryPreview id="foundations-tokens--overview" title="Foundations · Tokens (live)" height="520px" />
+
+<div class="sds-card-grid">
+  <a class="sds-card" href="./color"><h3>Color</h3><p>Semantic surfaces, text, action, status, and AI roles.</p></a>
+  <a class="sds-card" href="./typography"><h3>Typography</h3><p>Inter hierarchy via the Text component.</p></a>
+  <a class="sds-card" href="./spacing"><h3>Spacing &amp; radius</h3><p>Primitive scales for layout rhythm.</p></a>
+  <a class="sds-card" href="./elevation"><h3>Elevation</h3><p>Subtle and popover depth.</p></a>
+  <a class="sds-card" href="./iconography"><h3>Iconography</h3><p>Glyphs sized 14–28 with currentColor.</p></a>
+  <a class="sds-card" href="./design-tokens"><h3>Design tokens</h3><p>Primitive → semantic → component hierarchy.</p></a>
+</div>
+`,
+  );
+
   // Color page with full token table from colors.ts
   const colorsSrc = fs.readFileSync(
     path.join(ROOT, "src/tokens/colors.ts"),
@@ -594,6 +655,10 @@ title: Color
 Semantic color creates clear interfaces across Light and Dark. Values below are documented **on this site**; Figma remains the design source of truth.
 
 <ResourceLinks />
+
+## Interactive preview
+
+<StoryPreview id="foundations-tokens--overview" title="Color & foundations · live" height="480px" />
 
 ## Principles
 

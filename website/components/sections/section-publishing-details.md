@@ -9,9 +9,13 @@ description: Studio DS SectionPublishingDetails — React + TypeScript documenta
 
 React + TypeScript implementation of Studio DS **SectionPublishingDetails**.
 
-This page documents **SectionPublishingDetails** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **SectionPublishingDetails** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 <ComponentResources name="SectionPublishingDetails" figma="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS" storybook="/storybook/?path=/docs/components-sections-sectionpublishingdetails--docs" react="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/SectionPublishingDetails/SectionPublishingDetails.tsx" css="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/SectionPublishingDetails/SectionPublishingDetails.module.css" />
+
+## Interactive preview
+
+<StoryPreview id="components-sections-sectionpublishingdetails--default" title="SectionPublishingDetails · live story" height="420px" />
 
 ## When to use
 

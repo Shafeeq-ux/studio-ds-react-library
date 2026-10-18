@@ -9,9 +9,13 @@ description: Studio DS TableHeader — React + TypeScript documentation
 
 React + TypeScript implementation of Studio DS **TableHeader**.
 
-This page documents **TableHeader** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **TableHeader** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 <ComponentResources name="TableHeader" figma="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS" storybook="/storybook/?path=/docs/components-data-tableheader--docs" react="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/TableHeader/TableHeader.tsx" css="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/TableHeader/TableHeader.module.css" />
+
+## Interactive preview
+
+<StoryPreview id="components-data-tableheader--role-play" title="TableHeader · live story" height="360px" />
 
 ## When to use
 

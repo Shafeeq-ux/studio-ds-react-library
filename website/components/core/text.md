@@ -9,9 +9,13 @@ description: Studio DS Text — React + TypeScript documentation
 
 React + TypeScript implementation of Studio DS **Text**.
 
-This page documents **Text** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **Text** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 <ComponentResources name="Text" figma="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS" storybook="/storybook/?path=/docs/components-core-text--docs" react="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/Text/Text.tsx" css="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/Text/Text.module.css" />
+
+## Interactive preview
+
+<StoryPreview id="components-core-text--body" title="Text · live story" height="280px" />
 
 ## When to use
 

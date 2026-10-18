@@ -9,9 +9,13 @@ description: Studio DS Button — React + TypeScript documentation
 
 Maps to Figma Studio/Button Appearance.
 
-This page documents **Button** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **Button** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 <ComponentResources name="Button" figma="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS" storybook="/storybook/?path=/docs/components-core-button--docs" react="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/Button/Button.tsx" css="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/Button/Button.module.css" />
+
+## Interactive preview
+
+<StoryPreview id="components-core-button--primary" title="Button · live story" height="280px" />
 
 ## When to use
 

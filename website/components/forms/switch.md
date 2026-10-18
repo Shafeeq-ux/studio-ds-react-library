@@ -9,9 +9,13 @@ description: Studio DS Switch — React + TypeScript documentation
 
 React + TypeScript implementation of Studio DS **Switch**.
 
-This page documents **Switch** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **Switch** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 <ComponentResources name="Switch" figma="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS" storybook="/storybook/?path=/docs/components-forms-switch--docs" react="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/Switch/Switch.tsx" css="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/Switch/Switch.module.css" />
+
+## Interactive preview
+
+<StoryPreview id="components-forms-switch--on" title="Switch · live story" height="280px" />
 
 ## When to use
 

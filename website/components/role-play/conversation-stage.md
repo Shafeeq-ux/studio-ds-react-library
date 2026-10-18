@@ -9,9 +9,13 @@ description: Studio DS ConversationStage — React + TypeScript documentation
 
 React + TypeScript implementation of Studio DS **ConversationStage**.
 
-This page documents **ConversationStage** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **ConversationStage** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 <ComponentResources name="ConversationStage" figma="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS" storybook="/storybook/?path=/docs/components-role-play-conversationstage--docs" react="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/ConversationStage/ConversationStage.tsx" css="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/ConversationStage/ConversationStage.module.css" />
+
+## Interactive preview
+
+<StoryPreview id="components-role-play-conversationstage--expanded" title="ConversationStage · live story" height="420px" />
 
 ## When to use
 

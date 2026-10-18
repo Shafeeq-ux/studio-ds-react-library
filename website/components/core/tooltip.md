@@ -9,9 +9,13 @@ description: Studio DS Tooltip — React + TypeScript documentation
 
 Maps to Figma Studio/Contextual tooltip Placement.
 
-This page documents **Tooltip** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **Tooltip** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 <ComponentResources name="Tooltip" figma="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS" storybook="/storybook/?path=/docs/components-core-tooltip--docs" react="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/Tooltip/Tooltip.tsx" css="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/Tooltip/Tooltip.module.css" />
+
+## Interactive preview
+
+<StoryPreview id="components-core-tooltip--above" title="Tooltip · live story" height="280px" />
 
 ## When to use
 

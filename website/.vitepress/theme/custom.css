@@ -132,3 +132,38 @@
   display: table;
   width: 100%;
 }
+
+.sds-preview {
+  margin: 1.25rem 0 1.75rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--vp-c-bg-soft);
+}
+
+.sds-preview__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.55rem 0.9rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+  font-size: 0.8125rem;
+}
+
+.sds-preview__bar a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sds-preview__bar a:hover {
+  text-decoration: underline;
+}
+
+.sds-preview__frame {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: #f5f6f8;
+}

@@ -9,9 +9,13 @@ description: Studio DS SectionSession — React + TypeScript documentation
 
 React + TypeScript implementation of Studio DS **SectionSession**.
 
-This page documents **SectionSession** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **SectionSession** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 <ComponentResources name="SectionSession" figma="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS" storybook="/storybook/?path=/docs/components-sections-sectionsession--docs" react="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/SectionSession/SectionSession.tsx" css="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/SectionSession/SectionSession.module.css" />
+
+## Interactive preview
+
+<StoryPreview id="components-sections-sectionsession--default" title="SectionSession · live story" height="420px" />
 
 ## When to use
 

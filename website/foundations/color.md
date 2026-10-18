@@ -8,6 +8,10 @@ Semantic color creates clear interfaces across Light and Dark. Values below are 
 
 <ResourceLinks />
 
+## Interactive preview
+
+<StoryPreview id="foundations-tokens--overview" title="Color & foundations · live" height="480px" />
+
 ## Principles
 
 - Prefer **semantic** roles over hex values in product code.

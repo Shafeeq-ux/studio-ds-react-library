@@ -9,9 +9,13 @@ description: Studio DS Dropdown — React + TypeScript documentation
 
 React + TypeScript implementation of Studio DS **Dropdown**.
 
-This page documents **Dropdown** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **Dropdown** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 <ComponentResources name="Dropdown" figma="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS" storybook="/storybook/?path=/docs/components-core-dropdown--docs" react="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/Dropdown/Dropdown.tsx" css="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/Dropdown/Dropdown.module.css" />
+
+## Interactive preview
+
+<StoryPreview id="components-core-dropdown--open" title="Dropdown · live story" height="280px" />
 
 ## When to use
 

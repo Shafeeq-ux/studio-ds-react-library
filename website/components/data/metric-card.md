@@ -9,9 +9,13 @@ description: Studio DS MetricCard — React + TypeScript documentation
 
 React + TypeScript implementation of Studio DS **MetricCard**.
 
-This page documents **MetricCard** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **MetricCard** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 <ComponentResources name="MetricCard" figma="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS" storybook="/storybook/?path=/docs/components-data-metriccard--docs" react="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/MetricCard/MetricCard.tsx" css="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/MetricCard/MetricCard.module.css" />
+
+## Interactive preview
+
+<StoryPreview id="components-data-metriccard--default" title="MetricCard · live story" height="360px" />
 
 ## When to use
 

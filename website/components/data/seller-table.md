@@ -9,9 +9,13 @@ description: Studio DS SellerTable — React + TypeScript documentation
 
 React + TypeScript implementation of Studio DS **SellerTable**.
 
-This page documents **SellerTable** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **SellerTable** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 <ComponentResources name="SellerTable" figma="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS" storybook="/storybook/?path=/docs/components-data-sellertable--docs" react="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/SellerTable/SellerTable.tsx" />
+
+## Interactive preview
+
+<StoryPreview id="components-data-sellertable--default" title="SellerTable · live story" height="360px" />
 
 ## When to use
 

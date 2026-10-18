@@ -9,9 +9,13 @@ description: Studio DS SectionSkillScoreBreakdown — React + TypeScript documen
 
 React + TypeScript implementation of Studio DS **SectionSkillScoreBreakdown**.
 
-This page documents **SectionSkillScoreBreakdown** in full on the guidelines site. Use the links below for Figma, the interactive Storybook playground, and the React/TypeScript + CSS source.
+This page documents **SectionSkillScoreBreakdown** in full on the guidelines site. Use the links below for Figma, Storybook, and the React/TypeScript + CSS source. The preview below is the live Storybook story embedded here.
 
 <ComponentResources name="SectionSkillScoreBreakdown" figma="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS" storybook="/storybook/?path=/docs/components-sections-sectionskillscorebreakdown--docs" react="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/SectionSkillScoreBreakdown/SectionSkillScoreBreakdown.tsx" css="https://github.com/Shafeeq-ux/studio-ds-react-library/blob/main/src/components/SectionSkillScoreBreakdown/SectionSkillScoreBreakdown.module.css" />
+
+## Interactive preview
+
+<StoryPreview id="components-sections-sectionskillscorebreakdown--default" title="SectionSkillScoreBreakdown · live story" height="420px" />
 
 ## When to use
 
