@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { SessionBuyer } from "./SessionBuyer";
 
 const meta = {
-  title: "Components/SessionBuyer",
+  title: "Components/Role play/SessionBuyer",
   component: SessionBuyer,
   tags: ["autodocs"],
   args: { name: "Sarah Mitchell", role: "VP of Enablement", initials: "SM" },

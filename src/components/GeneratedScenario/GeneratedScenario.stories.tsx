@@ -3,7 +3,7 @@ import { GeneratedScenario } from "./GeneratedScenario";
 import { Button } from "../Button";
 
 const meta = {
-  title: "Components/GeneratedScenario",
+  title: "Components/AI/GeneratedScenario",
   component: GeneratedScenario,
   tags: ["autodocs"],
   parameters: {

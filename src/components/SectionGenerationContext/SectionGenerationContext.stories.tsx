@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { SectionGenerationContext } from "./SectionGenerationContext";
 
 const meta = {
-  title: "Components/SectionGenerationContext",
+  title: "Components/Sections/SectionGenerationContext",
   component: SectionGenerationContext,
   tags: ["autodocs"],
   parameters: {

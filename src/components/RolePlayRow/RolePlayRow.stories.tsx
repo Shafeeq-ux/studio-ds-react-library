@@ -4,7 +4,7 @@ import { Badge } from "../Badge";
 import { Dropdown } from "../Dropdown";
 import { MenuItem } from "../MenuItem";
 const meta = {
-  title: "Components/RolePlayRow",
+  title: "Components/Data/RolePlayRow",
   component: RolePlayRow,
   tags: ["autodocs"],
   parameters: { docs: { description: { component: "Maps to Figma `Studio/Role play row`." } } },

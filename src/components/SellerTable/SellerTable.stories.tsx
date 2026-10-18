@@ -6,7 +6,7 @@ import { SellerRow } from "../SellerRow";
 import { Avatar } from "../Avatar";
 const cols = "2fr 1fr 1fr 1fr";
 const meta = {
-  title: "Components/SellerTable",
+  title: "Components/Data/SellerTable",
   component: SellerTable,
   tags: ["autodocs"],
   parameters: { docs: { description: { component: "Maps to Figma `Studio/Data/Seller table`." } } },

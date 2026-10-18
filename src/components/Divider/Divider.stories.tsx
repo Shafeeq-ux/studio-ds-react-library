@@ -4,7 +4,7 @@ import { Stack } from "../Stack";
 import { Text } from "../Text";
 
 const meta = {
-  title: "Components/Divider",
+  title: "Components/Core/Divider",
   component: Divider,
   tags: ["autodocs"],
   parameters: {

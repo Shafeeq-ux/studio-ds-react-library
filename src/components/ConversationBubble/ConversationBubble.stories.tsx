@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { ConversationBubble } from "./ConversationBubble";
 import { Stack } from "../Stack";
 const meta = {
-  title: "Components/ConversationBubble",
+  title: "Components/Role play/ConversationBubble",
   component: ConversationBubble,
   tags: ["autodocs"],
   args: { speaker: "You", timestamp: "0:42", message: "We typically see payback within two quarters when teams adopt the coaching loop." },

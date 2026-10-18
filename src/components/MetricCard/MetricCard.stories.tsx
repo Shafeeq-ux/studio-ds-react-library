@@ -3,7 +3,7 @@ import { MetricCard } from "./MetricCard";
 import { Stack } from "../Stack";
 
 const meta = {
-  title: "Components/MetricCard",
+  title: "Components/Data/MetricCard",
   component: MetricCard,
   tags: ["autodocs"],
   args: {

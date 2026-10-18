@@ -128,11 +128,12 @@ function OverviewPage() {
 }
 
 const meta = {
-  title: "Overview",
+  title: "Examples/Composition",
   component: OverviewPage,
   parameters: {
     layout: "padded",
     controls: { disable: true },
+    options: { showPanel: false },
   },
 } satisfies Meta<typeof OverviewPage>;
 

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Score } from "./Score";
 const meta = {
-  title: "Components/Score",
+  title: "Components/Data/Score",
   component: Score,
   tags: ["autodocs"],
   parameters: { docs: { description: { component: "Maps to Figma `Studio/Score` Insufficient evidence empty state." } } },

@@ -4,7 +4,7 @@ import { Button } from "../Button";
 import { Stack } from "../Stack";
 
 const meta = {
-  title: "Components/Tooltip",
+  title: "Components/Core/Tooltip",
   component: Tooltip,
   tags: ["autodocs"],
   args: {

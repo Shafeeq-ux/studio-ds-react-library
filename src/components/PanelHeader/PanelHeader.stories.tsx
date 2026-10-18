@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { PanelHeader } from "./PanelHeader";
 
 const meta = {
-  title: "Components/PanelHeader",
+  title: "Components/Core/PanelHeader",
   component: PanelHeader,
   tags: ["autodocs"],
   args: {

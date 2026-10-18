@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { StickyAuthoringActions } from "./StickyAuthoringActions";
 import { Button } from "../Button";
 const meta = {
-  title: "Components/StickyAuthoringActions",
+  title: "Components/Navigation/StickyAuthoringActions",
   component: StickyAuthoringActions,
   tags: ["autodocs"],
   parameters: { docs: { description: { component: "Maps to Figma `Studio/Navigation/Sticky authoring actions`." } } },

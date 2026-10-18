@@ -3,7 +3,7 @@ import { ScenarioSkeleton } from "./ScenarioSkeleton";
 import { Button } from "../Button";
 
 const meta = {
-  title: "Components/ScenarioSkeleton",
+  title: "Components/AI/ScenarioSkeleton",
   component: ScenarioSkeleton,
   tags: ["autodocs"],
   parameters: {

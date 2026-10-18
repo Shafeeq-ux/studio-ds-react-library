@@ -3,7 +3,7 @@ import { ReviewSummary } from "./ReviewSummary";
 import { Button } from "../Button";
 
 const meta = {
-  title: "Components/ReviewSummary",
+  title: "Components/Role play/ReviewSummary",
   component: ReviewSummary,
   tags: ["autodocs"],
   parameters: {

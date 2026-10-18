@@ -3,7 +3,7 @@ import { Dropdown } from "./Dropdown";
 import { MenuItem } from "../MenuItem";
 
 const meta = {
-  title: "Components/Dropdown",
+  title: "Components/Core/Dropdown",
   component: Dropdown,
   tags: ["autodocs"],
   parameters: {

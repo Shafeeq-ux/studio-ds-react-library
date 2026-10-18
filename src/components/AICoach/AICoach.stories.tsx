@@ -3,7 +3,7 @@ import { AICoach } from "./AICoach";
 import { Button } from "../Button";
 
 const meta = {
-  title: "Components/AICoach",
+  title: "Components/AI/AICoach",
   component: AICoach,
   tags: ["autodocs"],
   parameters: {

@@ -7,7 +7,7 @@ const opts = [
   { value: "sr", label: "Sales Readiness Suite" },
 ];
 const meta = {
-  title: "Components/SelectMenu",
+  title: "Components/Forms/SelectMenu",
   component: SelectMenu,
   tags: ["autodocs"],
   args: { label: "Product *", options: opts, defaultOpen: true, defaultValue: "mt", placeholder: "Choose a product" },

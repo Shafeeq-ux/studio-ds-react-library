@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { ConversationStage } from "./ConversationStage";
 const meta = {
-  title: "Components/ConversationStage",
+  title: "Components/Role play/ConversationStage",
   component: ConversationStage,
   tags: ["autodocs"],
   args: { step: "Stage 02", title: "Handle price objection", description: "Acknowledge concern, quantify value, and ask for the decision criteria." },

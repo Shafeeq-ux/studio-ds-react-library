@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { AudioPlayer } from "./AudioPlayer";
 import { Button } from "../Button";
 const meta = {
-  title: "Components/AudioPlayer",
+  title: "Components/Role play/AudioPlayer",
   component: AudioPlayer,
   tags: ["autodocs"],
   args: { secondaryAction: <Button variant="secondary">Download</Button>, showSecondaryAction: true },

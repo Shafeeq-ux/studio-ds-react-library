@@ -3,7 +3,7 @@ import { Radio } from "./Radio";
 import { Stack } from "../Stack";
 
 const meta = {
-  title: "Components/Radio",
+  title: "Components/Forms/Radio",
   component: Radio,
   tags: ["autodocs"],
   args: {

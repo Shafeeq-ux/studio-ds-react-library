@@ -3,7 +3,7 @@ import { PromptComposer } from "./PromptComposer";
 import { Button } from "../Button";
 
 const meta = {
-  title: "Components/PromptComposer",
+  title: "Components/AI/PromptComposer",
   component: PromptComposer,
   tags: ["autodocs"],
   args: {

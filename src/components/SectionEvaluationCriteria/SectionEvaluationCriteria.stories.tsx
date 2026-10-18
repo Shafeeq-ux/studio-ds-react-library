@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { SectionEvaluationCriteria } from "./SectionEvaluationCriteria";
 
 const meta = {
-  title: "Components/SectionEvaluationCriteria",
+  title: "Components/Sections/SectionEvaluationCriteria",
   component: SectionEvaluationCriteria,
   tags: ["autodocs"],
   parameters: {

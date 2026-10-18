@@ -3,7 +3,7 @@ import { Progress } from "./Progress";
 import { Stack } from "../Stack";
 
 const meta = {
-  title: "Components/Progress",
+  title: "Components/Data/Progress",
   component: Progress,
   tags: ["autodocs"],
   args: { value: 64 },

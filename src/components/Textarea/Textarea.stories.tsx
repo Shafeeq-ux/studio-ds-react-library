@@ -3,7 +3,7 @@ import { Textarea as TextareaField } from "./Textarea";
 import { Stack } from "../Stack";
 
 const meta = {
-  title: "Components/Textarea",
+  title: "Components/Forms/Textarea",
   component: TextareaField,
   tags: ["autodocs"],
   args: {

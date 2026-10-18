@@ -3,7 +3,7 @@ import { SelectOption } from "./SelectOption";
 import { Stack } from "../Stack";
 
 const meta = {
-  title: "Components/SelectOption",
+  title: "Components/Forms/SelectOption",
   component: SelectOption,
   tags: ["autodocs"],
   args: { children: "Mindtickle AI Revenue Platform" },

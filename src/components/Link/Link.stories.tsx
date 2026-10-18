@@ -3,7 +3,7 @@ import { Link } from "./Link";
 import { Text } from "../Text";
 
 const meta = {
-  title: "Components/Link",
+  title: "Components/Core/Link",
   component: Link,
   tags: ["autodocs"],
   args: { children: "View performance", href: "#" },

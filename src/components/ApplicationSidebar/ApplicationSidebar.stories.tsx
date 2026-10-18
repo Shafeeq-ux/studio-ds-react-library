@@ -3,7 +3,7 @@ import { ApplicationSidebar } from "./ApplicationSidebar";
 import { NavigationItem } from "../NavigationItem";
 import { Icon } from "../Icon";
 const meta = {
-  title: "Components/ApplicationSidebar",
+  title: "Components/Navigation/ApplicationSidebar",
   component: ApplicationSidebar,
   tags: ["autodocs"],
   parameters: { docs: { description: { component: "Maps to Figma `Studio/Navigation/Application sidebar`." } } },

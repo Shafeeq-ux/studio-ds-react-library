@@ -3,7 +3,7 @@ import { PageHeading } from "./PageHeading";
 import { Button } from "../Button";
 
 const meta = {
-  title: "Components/PageHeading",
+  title: "Components/Core/PageHeading",
   component: PageHeading,
   tags: ["autodocs"],
   args: {

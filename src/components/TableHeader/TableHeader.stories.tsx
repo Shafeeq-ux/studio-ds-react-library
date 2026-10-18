@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { TableHeader } from "./TableHeader";
 import { TableColumnHeading } from "../TableColumnHeading";
 const meta = {
-  title: "Components/TableHeader",
+  title: "Components/Data/TableHeader",
   component: TableHeader,
   tags: ["autodocs"],
   parameters: { docs: { description: { component: "Maps to Figma `Studio/Table header`." } } },

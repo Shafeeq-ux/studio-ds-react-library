@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { SectionBuyerPersona } from "./SectionBuyerPersona";
 
 const meta = {
-  title: "Components/SectionBuyerPersona",
+  title: "Components/Sections/SectionBuyerPersona",
   component: SectionBuyerPersona,
   tags: ["autodocs"],
   parameters: {

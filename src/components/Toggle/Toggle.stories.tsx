@@ -3,7 +3,7 @@ import { Toggle } from "./Toggle";
 import { Stack } from "../Stack";
 
 const meta = {
-  title: "Components/Toggle",
+  title: "Components/Forms/Toggle",
   component: Toggle,
   tags: ["autodocs"],
   args: {

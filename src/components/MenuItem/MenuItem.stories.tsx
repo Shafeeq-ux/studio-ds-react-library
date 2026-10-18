@@ -9,7 +9,7 @@ const Pencil = () => (
 );
 
 const meta = {
-  title: "Components/MenuItem",
+  title: "Components/Core/MenuItem",
   component: MenuItem,
   tags: ["autodocs"],
   args: { children: "Edit role play", icon: <Pencil /> },

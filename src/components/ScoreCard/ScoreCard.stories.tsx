@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { ScoreCard } from "./ScoreCard";
 const meta = {
-  title: "Components/ScoreCard",
+  title: "Components/Data/ScoreCard",
   component: ScoreCard,
   tags: ["autodocs"],
   args: {

@@ -3,7 +3,7 @@ import { NumberInput } from "./NumberInput";
 import { Stack } from "../Stack";
 
 const meta = {
-  title: "Components/NumberInput",
+  title: "Components/Forms/NumberInput",
   component: NumberInput,
   tags: ["autodocs"],
   args: { defaultValue: 3, min: 0, max: 20, "aria-label": "Weight" },

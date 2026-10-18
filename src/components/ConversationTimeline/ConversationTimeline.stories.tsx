@@ -3,7 +3,7 @@ import { ConversationTimeline } from "./ConversationTimeline";
 import { Button } from "../Button";
 
 const meta = {
-  title: "Components/ConversationTimeline",
+  title: "Components/Role play/ConversationTimeline",
   component: ConversationTimeline,
   tags: ["autodocs"],
   parameters: {

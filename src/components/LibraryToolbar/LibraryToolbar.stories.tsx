@@ -4,7 +4,7 @@ import { Search } from "../Search";
 import { Button } from "../Button";
 import { Icon } from "../Icon";
 const meta = {
-  title: "Components/LibraryToolbar",
+  title: "Components/Data/LibraryToolbar",
   component: LibraryToolbar,
   tags: ["autodocs"],
   parameters: { docs: { description: { component: "Maps to Figma `Studio/Data/Library toolbar`." } } },

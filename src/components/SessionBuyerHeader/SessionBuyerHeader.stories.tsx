@@ -3,7 +3,7 @@ import { SessionBuyerHeader } from "./SessionBuyerHeader";
 import { Badge } from "../Badge";
 
 const meta = {
-  title: "Components/SessionBuyerHeader",
+  title: "Components/Role play/SessionBuyerHeader",
   component: SessionBuyerHeader,
   tags: ["autodocs"],
   args: {

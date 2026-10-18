@@ -4,7 +4,7 @@ import { IconButton } from "../IconButton";
 import { Icon } from "../Icon";
 import { Avatar } from "../Avatar";
 const meta = {
-  title: "Components/TopNavigation",
+  title: "Components/Navigation/TopNavigation",
   component: TopNavigation,
   tags: ["autodocs"],
   parameters: { docs: { description: { component: "Maps to Figma `Studio/Navigation/Top navigation`." } } },

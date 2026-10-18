@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { SectionTopSkillGaps } from "./SectionTopSkillGaps";
 
 const meta = {
-  title: "Components/SectionTopSkillGaps",
+  title: "Components/Sections/SectionTopSkillGaps",
   component: SectionTopSkillGaps,
   tags: ["autodocs"],
   parameters: {

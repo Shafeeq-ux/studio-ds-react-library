@@ -4,7 +4,7 @@ import { Button } from "../Button";
 import { Text } from "../Text";
 
 const meta = {
-  title: "Components/Stack",
+  title: "Components/Core/Stack",
   component: Stack,
   tags: ["autodocs"],
 } satisfies Meta<typeof Stack>;

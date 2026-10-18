@@ -4,7 +4,7 @@ import { Stack } from "../Stack";
 import { Icon } from "../Icon";
 
 const meta = {
-  title: "Components/Button",
+  title: "Components/Core/Button",
   component: Button,
   tags: ["autodocs"],
   args: {
@@ -27,7 +27,7 @@ const meta = {
     docs: {
       description: {
         component:
-          "Maps to Figma `Studio/Button` Appearance Primary/Secondary/Ghost/Danger, Size Compact→sm / Standard→md, Layout icon+label via `icon`.",
+          "**Status: stable.** Maps to Figma `Studio/Button` Appearance Primary/Secondary/Ghost/Danger, Size Compact→sm / Standard→md, Layout icon+label via `icon`. Source: `src/components/Button`.",
       },
     },
   },

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { LibraryCard } from "./LibraryCard";
 const meta = {
-  title: "Components/LibraryCard",
+  title: "Components/Data/LibraryCard",
   component: LibraryCard,
   tags: ["autodocs"],
   args: {

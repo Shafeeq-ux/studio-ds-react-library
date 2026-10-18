@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { AudienceOption } from "./AudienceOption";
 import { Stack } from "../Stack";
 const meta = {
-  title: "Components/AudienceOption",
+  title: "Components/Forms/AudienceOption",
   component: AudienceOption,
   tags: ["autodocs"],
   args: { children: "Enterprise AEs · Mid-market" },

@@ -9,7 +9,7 @@ const Dot = () => (
 );
 
 const meta = {
-  title: "Components/NavigationItem",
+  title: "Components/Navigation/NavigationItem",
   component: NavigationItem,
   tags: ["autodocs"],
   args: { children: "Library", icon: <Dot /> },

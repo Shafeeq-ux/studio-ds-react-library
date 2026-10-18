@@ -31,8 +31,34 @@ const preview: Preview = {
       options: {
         canvas: { name: "canvas", value: "#f5f6f8" },
         surface: { name: "surface", value: "#ffffff" },
-        "dark-canvas": { name: "dark-canvas", value: "#131923" }
-      }
+        "dark-canvas": { name: "dark-canvas", value: "#131923" },
+      },
+    },
+    options: {
+      storySort: {
+        order: [
+          "Welcome",
+          "Get started",
+          ["Engineering", "Design"],
+          "Foundations",
+          ["Overview", "Tokens"],
+          "Components",
+          [
+            "Status",
+            "Core",
+            "Forms",
+            "Navigation",
+            "Data",
+            "AI",
+            "Role play",
+            "Sections",
+          ],
+          "Examples",
+        ],
+      },
+    },
+    docs: {
+      toc: true,
     },
   },
 

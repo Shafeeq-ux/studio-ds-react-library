@@ -3,7 +3,7 @@ import { Alert } from "./Alert";
 import { Stack } from "../Stack";
 
 const meta = {
-  title: "Components/Alert",
+  title: "Components/Core/Alert",
   component: Alert,
   tags: ["autodocs"],
   args: {

@@ -3,7 +3,7 @@ import { Input } from "./Input";
 import { Stack } from "../Stack";
 
 const meta = {
-  title: "Components/Input",
+  title: "Components/Forms/Input",
   component: Input,
   tags: ["autodocs"],
   args: {

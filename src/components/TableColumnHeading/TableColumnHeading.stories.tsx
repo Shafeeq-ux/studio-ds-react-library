@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { TableColumnHeading } from "./TableColumnHeading";
 const meta = {
-  title: "Components/TableColumnHeading",
+  title: "Components/Data/TableColumnHeading",
   component: TableColumnHeading,
   tags: ["autodocs"],
   args: { children: "Average score", sortable: true },

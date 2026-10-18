@@ -3,7 +3,7 @@ import { Switch } from "./Switch";
 import { Stack } from "../Stack";
 
 const meta = {
-  title: "Components/Switch",
+  title: "Components/Forms/Switch",
   component: Switch,
   tags: ["autodocs"],
   args: {

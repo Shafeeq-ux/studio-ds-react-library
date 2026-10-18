@@ -3,7 +3,7 @@ import { Search } from "./Search";
 import { Stack } from "../Stack";
 
 const meta = {
-  title: "Components/Search",
+  title: "Components/Forms/Search",
   component: Search,
   tags: ["autodocs"],
   args: {

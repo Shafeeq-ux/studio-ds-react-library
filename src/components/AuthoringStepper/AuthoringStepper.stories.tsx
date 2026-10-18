@@ -8,7 +8,7 @@ const steps = [
   { id: "5", label: "Review" },
 ];
 const meta = {
-  title: "Components/AuthoringStepper",
+  title: "Components/Navigation/AuthoringStepper",
   component: AuthoringStepper,
   tags: ["autodocs"],
   args: { steps, activeStep: 2, layout: "wide" },

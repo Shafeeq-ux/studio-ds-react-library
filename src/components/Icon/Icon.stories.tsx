@@ -5,7 +5,7 @@ import { Stack } from "../Stack";
 import { Text } from "../Text";
 
 const meta = {
-  title: "Components/Icon",
+  title: "Components/Core/Icon",
   component: Icon,
   tags: ["autodocs"],
   args: { glyph: "search", size: 18 },

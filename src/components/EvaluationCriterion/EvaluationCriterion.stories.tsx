@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { EvaluationCriterion } from "./EvaluationCriterion";
 const meta = {
-  title: "Components/EvaluationCriterion",
+  title: "Components/Role play/EvaluationCriterion",
   component: EvaluationCriterion,
   tags: ["autodocs"],
   args: { criterion: "Quantifies ROI", description: "Uses concrete metrics tied to the buyer’s stated outcomes." },

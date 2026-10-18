@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { SectionConversationLength } from "./SectionConversationLength";
 
 const meta = {
-  title: "Components/SectionConversationLength",
+  title: "Components/Sections/SectionConversationLength",
   component: SectionConversationLength,
   tags: ["autodocs"],
   parameters: {

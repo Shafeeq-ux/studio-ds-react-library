@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { DifficultyGroup } from "./DifficultyGroup";
 const meta = {
-  title: "Components/DifficultyGroup",
+  title: "Components/Forms/DifficultyGroup",
   component: DifficultyGroup,
   tags: ["autodocs"],
   args: { defaultValue: "Intermediate", layout: "wide" },

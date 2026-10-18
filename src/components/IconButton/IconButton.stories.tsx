@@ -18,7 +18,7 @@ function HelpIcon() {
 }
 
 const meta = {
-  title: "Components/IconButton",
+  title: "Components/Core/IconButton",
   component: IconButton,
   tags: ["autodocs"],
   args: {

@@ -3,7 +3,7 @@ import { GenerationProgress } from "./GenerationProgress";
 import { Button } from "../Button";
 
 const meta = {
-  title: "Components/GenerationProgress",
+  title: "Components/AI/GenerationProgress",
   component: GenerationProgress,
   tags: ["autodocs"],
   parameters: {

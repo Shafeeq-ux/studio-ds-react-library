@@ -3,7 +3,7 @@ import { StepperItem } from "./StepperItem";
 import { Stack } from "../Stack";
 
 const meta = {
-  title: "Components/StepperItem",
+  title: "Components/Navigation/StepperItem",
   component: StepperItem,
   tags: ["autodocs"],
   args: { label: "Scenario", step: "1", state: "current" },

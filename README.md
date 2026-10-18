@@ -28,6 +28,14 @@ export function Example() {
 
 Peer dependencies: `react` and `react-dom` (^18 or ^19).
 
+## Documentation site
+
+Storybook is the product docs site (Welcome, Get started, Foundations, component status + Autodocs), hosted on GitHub Pages:
+
+**https://shafeeq-ux.github.io/studio-ds-react-library/**
+
+Sidebar IA: Welcome → Get started → Foundations → Components (Status / Core / Forms / …) → Examples.
+
 ## Develop
 
 ```bash

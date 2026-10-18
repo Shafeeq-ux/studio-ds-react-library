@@ -7,7 +7,7 @@ import { Badge } from "../Badge";
 import { Pagination } from "../Pagination";
 const cols = "2fr 1.2fr 1fr 1fr 0.8fr 1fr";
 const meta = {
-  title: "Components/RolePlayTable",
+  title: "Components/Data/RolePlayTable",
   component: RolePlayTable,
   tags: ["autodocs"],
   parameters: { docs: { description: { component: "Maps to Figma `Studio/Data/Role play table`." } } },

@@ -3,7 +3,7 @@ import { Avatar } from "./Avatar";
 import { Stack } from "../Stack";
 
 const meta = {
-  title: "Components/Avatar",
+  title: "Components/Core/Avatar",
   component: Avatar,
   tags: ["autodocs"],
   args: {

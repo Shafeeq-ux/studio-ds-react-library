@@ -3,7 +3,7 @@ import { ReadinessCheck } from "./ReadinessCheck";
 import { Button } from "../Button";
 
 const meta = {
-  title: "Components/ReadinessCheck",
+  title: "Components/AI/ReadinessCheck",
   component: ReadinessCheck,
   tags: ["autodocs"],
   parameters: {

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { SellerRow } from "./SellerRow";
 import { Avatar } from "../Avatar";
 const meta = {
-  title: "Components/SellerRow",
+  title: "Components/Data/SellerRow",
   component: SellerRow,
   tags: ["autodocs"],
   args: { name: "Sam Chen", avatar: <Avatar initials="SC" size={32} />, score: "84", attempts: "12", trend: "+6 pts" },
