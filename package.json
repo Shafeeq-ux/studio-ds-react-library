@@ -28,7 +28,10 @@
     "build": "tsc -p tsconfig.build.json --noEmit && vite build",
     "lint": "oxlint src",
     "storybook": "storybook dev -p 44041 --no-open",
-    "build-storybook": "storybook build -o storybook-static"
+    "build-storybook": "storybook build -o storybook-static",
+    "docs:dev": "vitepress dev website --port 44142 --host 127.0.0.1",
+    "docs:build": "vitepress build website",
+    "build-site": "npm run docs:build && STORYBOOK_BASE_PATH=/studio-ds-react-library/storybook/ storybook build -o site-dist/storybook && touch site-dist/.nojekyll site-dist/storybook/.nojekyll"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
@@ -51,7 +54,8 @@
     "vite": "^6.3.5",
     "vite-plugin-dts": "^4.5.4",
     "vite-plugin-lib-inject-css": "^2.2.2",
-    "vite-plugin-static-copy": "^2.3.2"
+    "vite-plugin-static-copy": "^2.3.2",
+    "vitepress": "^1.6.4"
   },
   "keywords": [
     "design-system",

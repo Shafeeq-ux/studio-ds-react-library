@@ -1,4 +1,4 @@
-name: Deploy Storybook to GitHub Pages
+name: Deploy Studio DS docs to GitHub Pages
 
 on:
   push:
@@ -30,19 +30,13 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Build Storybook
-        run: npm run build-storybook
-        env:
-          # Project site: https://<user>.github.io/<repo>/
-          STORYBOOK_BASE_PATH: /studio-ds-react-library/
-
-      - name: Ensure .nojekyll
-        run: touch storybook-static/.nojekyll
+      - name: Build guidelines + Storybook site
+        run: npm run build-site
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: storybook-static
+          path: site-dist
 
   deploy:
     needs: build

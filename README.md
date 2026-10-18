@@ -4,6 +4,17 @@ React + TypeScript design system from the [Studio DS Figma file](https://www.fig
 
 Tokens: **Studio · Semantic** (Light/Dark), **Studio · Typography**, **Studio · Primitives**, **Studio/Elevation/***.
 
+## Documentation (Mews-style guidelines + Storybook)
+
+Hosted on GitHub Pages:
+
+| Surface | URL |
+| ------- | --- |
+| **Guidelines site** (VitePress) | https://shafeeq-ux.github.io/studio-ds-react-library/ |
+| **Storybook playground** | https://shafeeq-ux.github.io/studio-ds-react-library/storybook/ |
+
+Guidelines IA mirrors [mews.design](https://www.mews.design/latest/welcome-eumfLxWD): Welcome · Get started (Design / Engineering) · Foundations · Components (status + groups) · Resources — with **GitHub · Figma · Storybook** links on every page. Flutter is out of scope.
+
 ## Install (library package)
 
 ```bash
@@ -28,97 +39,54 @@ export function Example() {
 
 Peer dependencies: `react` and `react-dom` (^18 or ^19).
 
-## Documentation site
-
-Storybook is the product docs site (Welcome, Get started, Foundations, component status + Autodocs), hosted on GitHub Pages:
-
-**https://shafeeq-ux.github.io/studio-ds-react-library/**
-
-Sidebar IA: Welcome → Get started → Foundations → Components (Status / Core / Forms / …) → Examples.
-
 ## Develop
 
 ```bash
 npm install
+npm run docs:dev         # VitePress guidelines · http://127.0.0.1:44142
 npm run storybook        # Storybook 10 · http://127.0.0.1:44041
 npm run build            # library package → dist/
-npm run build-storybook  # static docs site → storybook-static/
+npm run build-storybook  # Storybook only → storybook-static/
+npm run build-site       # Pages bundle → site-dist/ (+ storybook/)
 npm run lint
 ```
 
-If the sidebar only shows a few components, pull the latest branch and reinstall:
+## Deploy (GitHub Pages / Netlify / Vercel)
 
-```bash
-git fetch origin
-git checkout cursor/studio-ds-scaffold-160f
-git pull origin cursor/studio-ds-scaffold-160f
-rm -rf node_modules
-npm install
-npm run storybook
-```
-
-## Deploy Storybook (static site)
-
-Static output folder: **`storybook-static/`** (gitignored — build on CI or locally).
-
-### Build command
+Static output: **`site-dist/`** (guidelines at `/`, Storybook at `/storybook/`).
 
 ```bash
 npm ci
-npm run build-storybook
+npm run build-site
 ```
 
-Produces `/storybook-static` with `index.html` — ready for any static host.
+### GitHub Pages
 
-### GitHub Pages (this repo)
+Workflow: [`.github/workflows/deploy-storybook-pages.yml`](.github/workflows/deploy-storybook-pages.yml)
 
-CI workflow: [`.github/workflows/deploy-storybook-pages.yml`](.github/workflows/deploy-storybook-pages.yml).
+- Build: `npm run build-site`
+- Publish: `site-dist`
+- URL: https://shafeeq-ux.github.io/studio-ds-react-library/
 
-1. Push to `main` (or run **Actions → Deploy Storybook to GitHub Pages → Run workflow**).
-2. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. Site URL after the first green deploy:
-
-   **https://shafeeq-ux.github.io/studio-ds-react-library/**
-
-Local build with the same base path:
-
-```bash
-STORYBOOK_BASE_PATH=/studio-ds-react-library/ npm run build-storybook
-```
-
-### Netlify (connect repo)
-
-`netlify.toml` is already in the repo:
+### Netlify
 
 | Setting | Value |
 | ------- | ----- |
-| Build command | `npm ci && npm run build-storybook` |
-| Publish directory | `storybook-static` |
-| Node | 22 |
+| Build command | `npm ci && npm run build-site` |
+| Publish directory | `site-dist` |
 
-Connect the Git repo in Netlify → Deploy. No extra UI settings needed if `netlify.toml` is present.
-
-### Vercel (connect repo)
-
-`vercel.json` is already in the repo:
+### Vercel
 
 | Setting | Value |
 | ------- | ----- |
-| Install command | `npm ci` |
-| Build command | `npm run build-storybook` |
-| Output directory | `storybook-static` |
-| Framework preset | Other (null) |
+| Install | `npm ci` |
+| Build | `npm run build-site` |
+| Output | `site-dist` |
 
-Import the Git repo in Vercel → Deploy.
+### Drag-and-drop
 
-### Drag-and-drop (no Git connect)
-
-1. Locally: `npm ci && npm run build-storybook`
-2. Upload the **`storybook-static`** folder:
-   - **Netlify** → Sites → Add new site → Deploy manually → drop `storybook-static`
-   - **Vercel** → Add New → Project → upload the `storybook-static` directory (or zip of its contents)
-
-Yes — drag-and-drop of `storybook-static` works as a finished static site (SPA rewrite not required for browsing Storybook’s hashed assets; Netlify/Vercel configs also include a fallback rewrite for deep links).
+1. `npm ci && npm run build-site`
+2. Upload **`site-dist`**
 
 ## Coverage
 

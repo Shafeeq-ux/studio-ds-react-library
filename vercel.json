@@ -1,7 +1,9 @@
 {
-  "buildCommand": "npm run build-storybook",
-  "outputDirectory": "storybook-static",
+  "buildCommand": "npm run build-site",
+  "outputDirectory": "site-dist",
   "installCommand": "npm ci",
   "framework": null,
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/storybook/(.*)", "destination": "/storybook/index.html" }
+  ]
 }

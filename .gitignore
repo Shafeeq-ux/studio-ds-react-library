@@ -10,6 +10,10 @@ node_modules
 dist
 dist-ssr
 storybook-static
+site-dist
+website/.vitepress/cache
+website/.vitepress/dist
+
 *.local
 
 # Editor

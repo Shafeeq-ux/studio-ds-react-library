@@ -1,11 +1,12 @@
 [build]
-  command = "npm ci && npm run build-storybook"
-  publish = "storybook-static"
+  command = "npm ci && npm run build-site"
+  publish = "site-dist"
 
 [build.environment]
   NODE_VERSION = "22"
 
+# VitePress cleanUrls + Storybook SPA under /storybook/
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/storybook/*"
+  to = "/storybook/index.html"
   status = 200

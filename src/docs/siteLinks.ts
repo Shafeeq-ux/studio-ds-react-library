@@ -5,9 +5,11 @@ export const SITE = {
   githubTree: "https://github.com/Shafeeq-ux/studio-ds-react-library/tree/main",
   figmaFile:
     "https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS",
-  /** Public Storybook / docs host (GitHub Pages). */
+  /** Guidelines site (VitePress on GitHub Pages). */
+  docsSite: "https://shafeeq-ux.github.io/studio-ds-react-library",
+  /** Interactive Storybook playground (Pages subdirectory). */
   storybookPages:
-    "https://shafeeq-ux.github.io/studio-ds-react-library",
+    "https://shafeeq-ux.github.io/studio-ds-react-library/storybook",
   issues: "https://github.com/Shafeeq-ux/studio-ds-react-library/issues",
 } as const;
 
@@ -28,7 +30,7 @@ export function storyDocsPath(title: string): string {
     .replace(/\s*\/\s*/g, "-")
     .replace(/\s+/g, "-")
     .replace(/[^a-z0-9-]/g, "");
-  return `/?path=/docs/${id}--docs`;
+  return `/index.html?path=/docs/${id}--docs`;
 }
 
 export function githubComponentSource(componentName: string): string {
