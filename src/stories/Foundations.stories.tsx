@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Text } from "../components/Text";
 import { Stack } from "../components/Stack";
+import { DocResources } from "../docs/DocResources";
 import { colorValuesLight } from "../tokens";
 import styles from "./Foundations.module.css";
 
@@ -52,6 +53,8 @@ function FoundationsPage() {
           Use the Storybook theme toolbar for Dark.
         </Text>
       </Stack>
+
+      <DocResources />
 
       <Stack gap={16}>
         <Text variant="heading">Color · Semantic variables</Text>

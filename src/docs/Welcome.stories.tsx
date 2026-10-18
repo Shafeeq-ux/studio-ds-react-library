@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Stack } from "../components/Stack";
 import { Text } from "../components/Text";
+import { DocResources } from "./DocResources";
 import styles from "./docs.module.css";
 
 function WelcomePage() {
@@ -12,6 +13,8 @@ function WelcomePage() {
           This is a living document for Studio DS — always in progress.
         </Text>
       </Stack>
+
+      <DocResources />
 
       <Stack gap={10}>
         <Text variant="heading">We&apos;re glad you&apos;re here</Text>
@@ -81,20 +84,9 @@ function WelcomePage() {
         </ul>
       </Stack>
 
-      <Stack gap={8}>
-        <Text variant="heading">Resources</Text>
-        <div className={styles.linkRow}>
-          <a href="https://github.com/Shafeeq-ux/studio-ds-react-library">
-            GitHub repo
-          </a>
-          <a href="https://shafeeq-ux.github.io/studio-ds-react-library/">
-            GitHub Pages
-          </a>
-          <a href="https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS">
-            Figma · Studio DS
-          </a>
-        </div>
-      </Stack>
+      <Text tone="secondary" variant="caption">
+        More detail: open the <strong>Resources</strong> page in the sidebar.
+      </Text>
     </Stack>
   );
 }

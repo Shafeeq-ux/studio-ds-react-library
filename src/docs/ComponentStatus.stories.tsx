@@ -7,6 +7,7 @@ import {
   statusCounts,
   type ComponentStatus,
 } from "./componentStatus";
+import { DocResources } from "./DocResources";
 import styles from "./docs.module.css";
 
 function pillClass(status: ComponentStatus) {
@@ -28,6 +29,8 @@ function StatusPage() {
           behavior.
         </Text>
       </Stack>
+
+      <DocResources />
 
       <div className={styles.cardGrid}>
         <div className={styles.card}>

@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Stack } from "../components/Stack";
 import { Text } from "../components/Text";
+import { DocResources } from "./DocResources";
 import styles from "./docs.module.css";
 
 function EngineeringPage() {
@@ -13,6 +14,8 @@ function EngineeringPage() {
           and API reference.
         </Text>
       </Stack>
+
+      <DocResources />
 
       <Stack gap={10}>
         <Text variant="heading">Install</Text>

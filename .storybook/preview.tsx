@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/react-vite";
+import { StudioDocsContainer } from "./StudioDocsContainer";
 import "../src/tokens/tokens.css";
 import "../src/styles/base.css";
 
@@ -53,12 +54,14 @@ const preview: Preview = {
             "Role play",
             "Sections",
           ],
+          "Resources",
           "Examples",
         ],
       },
     },
     docs: {
       toc: true,
+      container: StudioDocsContainer,
     },
   },
 
