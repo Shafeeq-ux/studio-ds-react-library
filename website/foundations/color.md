@@ -30,4 +30,4 @@ Semantic color creates clear interfaces across Light and Dark.
 
 ## Live reference
 
-Open [Foundations → Tokens](/studio-ds-react-library/storybook/?path=/docs/foundations-tokens--overview) and toggle the Theme toolbar.
+Open [Foundations → Tokens](/storybook/?path=/docs/foundations-tokens--overview) and toggle the Theme toolbar.

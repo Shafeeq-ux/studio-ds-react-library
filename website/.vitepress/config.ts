@@ -1,7 +1,8 @@
 import { defineConfig } from "vitepress";
 
 const BASE = "/studio-ds-react-library/";
-const STORYBOOK = `${BASE}storybook/`;
+/** Site-relative path — VitePress applies `base` itself; do not prefix BASE here. */
+const STORYBOOK = "/storybook/";
 const GITHUB = "https://github.com/Shafeeq-ux/studio-ds-react-library";
 const FIGMA =
   "https://www.figma.com/design/8wXGfy006ncSwwx6BPrAAh/Studio-DS";

@@ -10,7 +10,7 @@ Storybook is the interactive playground and API reference for Studio DS.
 
 ## Hosted
 
-**[https://shafeeq-ux.github.io/studio-ds-react-library/storybook/](/storybook/)**
+**[https://shafeeq-ux.github.io/storybook/](/storybook/)**
 
 ## What you get
 

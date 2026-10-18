@@ -38,4 +38,4 @@ On each component Autodocs page (Storybook Docs tab):
 3. **Example** — live Controls  
 4. **API** — TypeScript props  
 
-Start with [Button](/studio-ds-react-library/storybook/?path=/docs/components-core-button--docs).
+Start with [Button](/storybook/?path=/docs/components-core-button--docs).

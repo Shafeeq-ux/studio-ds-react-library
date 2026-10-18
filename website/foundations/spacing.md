@@ -22,4 +22,4 @@ Primary radii: **6 · 8 · 12**. Prefer tokens over hard-coded `border-radius`.
 
 ## Live reference
 
-[Foundations → Tokens](/studio-ds-react-library/storybook/?path=/docs/foundations-tokens--overview)
+[Foundations → Tokens](/storybook/?path=/docs/foundations-tokens--overview)

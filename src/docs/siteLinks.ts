@@ -49,7 +49,7 @@ export function siteWideLinks(): DocResourceLinks {
     storybook: SITE.storybookPages,
     githubLabel: "GitHub repo",
     figmaLabel: "Figma · Studio DS",
-    storybookLabel: "Storybook (this site)",
+    storybookLabel: "Storybook playground",
   };
 }
 

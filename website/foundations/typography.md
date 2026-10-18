@@ -30,4 +30,4 @@ import { Text } from "studio-ds";
 <Text tone="secondary">Secondary supporting copy</Text>
 ```
 
-See specimens in [Storybook Foundations](/studio-ds-react-library/storybook/?path=/docs/foundations-tokens--overview).
+See specimens in [Storybook Foundations](/storybook/?path=/docs/foundations-tokens--overview).

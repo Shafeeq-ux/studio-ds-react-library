@@ -23,4 +23,4 @@ import { Icon, IconButton } from "studio-ds";
 
 ## Playground
 
-[Icon stories](/studio-ds-react-library/storybook/?path=/docs/components-core-icon--docs)
+[Icon stories](/storybook/?path=/docs/components-core-icon--docs)

@@ -10,7 +10,7 @@ These interlocking design elements lay the foundation for everything in Studio D
 
 ## Introduction
 
-Foundations provide consistency and visual harmony across products. Explore typography, color, spacing, elevation, and iconography — then inspect live specimens in [Storybook Foundations → Tokens](/studio-ds-react-library/storybook/?path=/docs/foundations-tokens--overview).
+Foundations provide consistency and visual harmony across products. Explore typography, color, spacing, elevation, and iconography — then inspect live specimens in [Storybook Foundations → Tokens](/storybook/?path=/docs/foundations-tokens--overview).
 
 <div class="sds-card-grid">
   <a class="sds-card" href="./color"><h3>Color</h3><p>Semantic surfaces, text, action, status, and AI roles.</p></a>
